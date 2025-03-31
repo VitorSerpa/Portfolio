@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif; /* ou "Albert Sans" */
+}
+
+body{
+  height: 200vh;
+}
+
+a{
+  text-decoration: none;
+  color: #1E1E1E;
+}
