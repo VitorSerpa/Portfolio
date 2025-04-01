@@ -3,14 +3,14 @@
   padding: 0;
   background-color: black;
   color: white;
-  font-family: "Open Sans", sans-serif; /* ou "Albert Sans" */
+  font-family: "Albert Sans"; /* ou "Albert Sans" */
 }
 
 body{
-  height: 200vh;
+  font-family: 'Albert Sans';font-size: 22px;
+  display: grid;
 }
 
 a{
   text-decoration: none;
-  color: #1E1E1E;
 }

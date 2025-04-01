@@ -1,0 +1,22 @@
+.button button {
+    margin-top: 1rem;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: clamp(18px, 2vw, 25px);
+    padding: 1rem; 
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.button button:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+
+.button button:h{
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}

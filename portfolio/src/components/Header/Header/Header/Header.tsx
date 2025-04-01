@@ -4,7 +4,7 @@ import styles from "./Header.module.css"
 const Header: React.FC = () => {
     return (
         <header className={styles.header}>
-            <div>
+            <div className={styles.titleDiv}>
                 <h1>Vitor Serpa da Silva</h1>
             </div>
             <nav className={styles.nav}>
