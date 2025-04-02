@@ -1,0 +1,25 @@
+.projectContainer{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.projectContainer h1{
+    font-size: clamp(42px, 5vw, 42px); /* Mantém 42px como tamanho máximo */
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Albert Sans";
+    grid-column: 2 / 6;
+    grid-row: 1;
+    margin-top: 5rem;
+}
+
+.projectContent{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    background-color: #1E1E1E;
+    grid-column: 2 / 16;
+    grid-row: 2; 
+}

@@ -6,6 +6,10 @@
   font-family: "Albert Sans"; /* ou "Albert Sans" */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Albert Sans';font-size: 22px;
   display: grid;
