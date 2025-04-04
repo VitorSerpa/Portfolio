@@ -20,7 +20,8 @@
 
 .sectionWelcome {
     margin-top: 10rem;
-    grid-column: 2 / 7;
+    grid-column: 3 / 8;
+    text-align: justify;
 }
 
 .sectionImage {

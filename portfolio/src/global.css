@@ -1,0 +1,25 @@
+h1 {
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(24px, 4vw, 36px);
+    color: #ffffff;
+    margin: 0.5rem 0;
+    background-color: transparent;
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(18px, 3vw, 24px);
+    color: #ffffff;
+    margin: 0.5rem 0;
+    background-color: transparent;
+    font-weight: normal;
+  }
+  
+  p {
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(18px, 2vw, 30px);
+    color: #8F8F8F;
+    margin-top: 0.5rem;
+    background-color: transparent;
+  }
