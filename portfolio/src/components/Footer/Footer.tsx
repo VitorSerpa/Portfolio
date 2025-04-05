@@ -20,7 +20,7 @@ const Footer:FC = () =>{
                     <li><img className={styles.svg} src="/svg/gmail.svg" alt="Icone email" /><a href="mailto:vitorserpa123@gmail.com" target="_blank">Email</a></li>
                     <li><img className={styles.svg} src="/svg/github.svg" alt="" /><a href="github.com/VitorSerpa" target="_blank">GitHub</a></li>
                     <li><img className={styles.svg} src="/svg/linkedin.svg" alt="" /><a href="https://www.linkedin.com/in/vitor-serpa-925b46322/" target="_blank">Linkedin</a></li>
-                    <li><img className={styles.svg} src="/svg/whatsapp.svg" alt="" /><a href="wa.me/12981312111" target="_blank">WhatsApp</a></li>
+                    <li><img className={styles.svg} src="/svg/whatsapp.svg" alt="" /><a href="https://wa.me/12981312111" target="_blank">WhatsApp</a></li>
                 </ul>
             </div>
         </footer>
