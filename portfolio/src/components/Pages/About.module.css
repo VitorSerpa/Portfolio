@@ -1,0 +1,45 @@
+.about{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;         /* ✅ Alinha verticalmente no centro */
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+}
+.description {
+    width: 40%;
+    text-align: justify; 
+    overflow-wrap: break-word; 
+    word-break: break-word;    
+}   
+
+.a{
+    font-size: clamp(18px, 2vw, 25px);
+}
+
+.a :hover{
+    text-decoration: underline;
+}
+
+.p{
+    margin-top: 2rem;
+    font-size: clamp(18px, 2vw, 25px);
+}
+
+@media (max-width: 1024px) {
+    .img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 725px) {
+    .img{
+        height: 220px;
+        width: 220px;
+    }
+}

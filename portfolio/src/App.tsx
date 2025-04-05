@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from "./components/Header/Header"
+import { motion } from "framer-motion"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header"
 import Main from "./components/Main/Main"
+import Footer from './components/Footer/Footer';
+import About from "./components/Pages/About"
+import Projetos from './components/Pages/Projetos';
+import NotFound from './components/Pages/NotFound';
 import './App.css';
 import "./global.css"
-import { motion } from "framer-motion"
-import Projetos from './components/Pages/Projetos';
 
 function App() {
   return (
@@ -21,8 +24,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path='/projetos' element={<Projetos />} />
+              <Route path='/sobre' element={<About />} />
+              <Route path='*' element={<NotFound/>}/>
             </Routes>
           </div>
+          <Footer/>
         </div>
       </Router>
     </motion.div>

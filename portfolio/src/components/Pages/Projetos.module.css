@@ -1,4 +1,8 @@
 
+.projetosMain{
+    padding-bottom: 8rem;
+}
+
 .projetosMain h1{
     border-bottom: solid 1px white;
     padding: 1.4rem;
@@ -16,19 +20,19 @@
 .projectsView .projectCard {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribui os elementos verticalmente */
+    justify-content: space-between;
     border: 1px white solid;
     border-radius: 10px;
-    width: 28%; /* Para telas grandes */
-    height: 60vh;
-    min-width: 400px; /* Evita que fique muito pequeno */
-    padding: 1rem; /* Adiciona espaço interno */
+    width: 28%;
+    height: 75vh;
+    min-width: 400px;
+    padding: 1rem;
 }
 .projectsView div img {
     width: 100%;  
     height: 50%;  
-    object-fit: cover;  /* Garante que a imagem se ajuste sem distorcer */
-    border-top-left-radius: 10px;  /* Mantém a borda arredondada */
+    object-fit: cover;
+    border-top-left-radius: 10px;  
     border-top-right-radius: 10px;
 }
 
@@ -56,7 +60,7 @@
 }
 
 h3 {
-    margin-top: auto; /* Empurra o <h3> para o fim */
+    margin-top: auto; 
 }
 h2{
     margin-top: 2rem;
@@ -77,15 +81,64 @@ p{
     font-weight: normal;
 }
 
+.svg {
+    margin-top: 0.4rem;
+    margin-left: 0.7rem;
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #ffffff;
+    object-fit: contain; 
+    border-radius: 10px;
+}
+
+.technologies{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.tooltip {
+    position: relative;
+    display: flex;        
+    align-items: center;  
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .tooltipText {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 95%;
+    left: 55%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
 
 
 @media (max-width: 1024px) {
     .projectsView {
-        justify-content: center; /* Mantém centralizado */
+        justify-content: center; 
     }
 
     .projectsView .projectCard {
-        width: 45%; /* Ocupa metade da tela em tablets */
+        width: 75%; 
         min-width: 250px;
         height: 500px;
     }
@@ -93,16 +146,48 @@ p{
 
 @media (max-width: 768px) {
     .projectsView .projectCard {
-        width: 70%; /* Ocupa quase toda a tela em celulares */
+        width: 80%;
         min-width: auto;
         height: 500px;
+    }
+    .svg{
+        margin-left: 0.5rem;
+        width: 28px !important;
+        height: 28px !important;
+        background-color: rgb(255, 255, 255);
+        object-fit: contain; 
+        border-radius: 10px;
     }
 }
 
 @media (max-width: 500px) {
     .projectsView .projectCard {
-        width: 50%; /* Ocupa quase toda a tela em celulares */
+        width: 80%;
         min-width: auto;
         height: 500px;
     }
 }
+
+@media (max-width: 400px) {
+    .projectsView .projectCard {
+        width: 80%;
+        min-width: auto;
+        height: 500px;
+    }
+
+    h3{
+        font-size: clamp(24px, 4vw, 36px);
+
+    }
+
+    .svg{
+        margin-left: 0.5rem;
+        width: 20px !important;
+        height: 20px !important;
+        background-color: rgb(255, 255, 255);
+        object-fit: contain;
+        border-radius: 10px;
+    }
+}
+
+

@@ -8,9 +8,10 @@ const Header: React.FC = () => {
                 <a href="/"><h1>Vitor Serpa da Silva</h1></a>
             </div>
             <nav className={styles.nav}>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-                <a href="#">Projetos</a>
+                <a className={styles.a} href="/">Inicio</a>
+                <a className={styles.a} href="/sobre">Sobre</a>
+                <a className={styles.a} href="#contato">Contato</a>
+                <a className={styles.a} href="/projetos">Projetos</a>
             </nav>
         </header>);
 };

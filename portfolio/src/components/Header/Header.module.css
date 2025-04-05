@@ -3,7 +3,6 @@
     grid-template-columns: repeat(16, 1fr);
     align-items: center;
     background-color: #000000;
-    color: white;
     min-height: 11rem;
 }
 
@@ -27,7 +26,7 @@
     align-items: center;
 }
 
-a {
+.a {
     font-size: 30px;
     color: #8F8F8F;
     text-decoration: none;

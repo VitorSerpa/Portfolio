@@ -1,0 +1,56 @@
+.footer{
+    border-top: solid 1px white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    min-height: 11rem;
+}
+
+
+
+li{
+    list-style-type: none;
+}
+
+.navigation{
+    text-align: center;
+}
+
+.navigation a{
+    color: #8F8F8F;
+
+}
+
+.navigation a:hover{
+    text-decoration:underline;
+}
+
+.contacts a{
+    color: #8F8F8F;
+}
+
+.contacts{
+    grid-column: 9/ 16;
+    text-align: center;
+}
+
+.contacts a:hover{
+    text-decoration:underline;
+}
+
+.svg {
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #ffffff;
+    object-fit: contain; 
+    border-radius: 10px;
+}
+
+.navigation ul,
+.contacts ul {
+    text-align: left;
+    padding-left: 0;
+}

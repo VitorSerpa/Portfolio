@@ -15,7 +15,7 @@ const Main: FC = () =>{
             </section>
 
             <section className={styles.sectionImage}>
-                <img className={styles.myImg} src="/images/VitorSerpa.png" alt="Vitor Serpa" />
+                <img className={styles.myImg} src="/images/VitorSerpa.png" alt="Imagem do Autor do site Vitor Serpa" />
             </section>
         </main>
     )
