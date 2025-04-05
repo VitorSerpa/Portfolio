@@ -1,6 +1,5 @@
 .footer{
-    border: solid 1px white;
-    border-bottom: 0px;
+    border-top: solid 1px white;
     display: flex;
     justify-content: space-around;
     align-items: center;
