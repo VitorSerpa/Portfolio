@@ -44,7 +44,7 @@
     }
 
     .main p {
-        font-size: clamp(16px, 1.8vw, 28px);
+        font-size: clamp(20px, 1.8vw, 28px);
     }
 }
 
@@ -54,10 +54,11 @@
     }
 
     .main p {
-        font-size: clamp(14px, 1.5vw, 26px);
+        font-size: clamp(20px, 1.5vw, 26px);
     }
 
     .sectionWelcome {
+        margin-top: 2rem;
         grid-column: 2 / 16;
         text-align: center;
     }
@@ -70,6 +71,8 @@
     .myImg {
         max-width: 250px;
     }
+
+    
 }
 
 @media (max-width: 480px) {
@@ -78,14 +81,20 @@
     }
 
     .main p {
-        font-size: clamp(12px, 3vw, 24px);
+        font-size: clamp(20px, 1.5vw, 26px);
+
     }
 
     .sectionWelcome {
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
     .myImg {
         max-width: 200px;
+    }
+
+    .sectionImage {
+        
+        margin-top: 2rem;
     }
 }

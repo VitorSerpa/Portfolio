@@ -59,8 +59,8 @@
         margin-left: 0;
     }
 
-    a {
-        margin: 0 1rem; /* Espaçamento lateral reduzido */
+    .a {
+        margin-left: 0;
     }
 }
 
@@ -81,6 +81,6 @@
 
     a {
         font-size: 24px;
-        margin: 0.5rem 0; /* Ajuste para melhor espaçamento */
+        margin-left: 0;
     }
 }

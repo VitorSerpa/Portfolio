@@ -7,7 +7,7 @@ const About: FC = () => {
 
             <div className={styles.description}>
 
-                <h1>Meu nome é Vitor Serpa da Silva</h1>
+                <h1>Meu nome é Vitor Serpa da Silva.</h1>
                 <p className={styles.p}>
                     Apaixonado por tecnologia, atualmente estou cursando Desenvolvimento de Software
                     Multiplataforma na FATEC-SJC. Com experiências anteriores no ensino médio técnico da UNIVAP, tive

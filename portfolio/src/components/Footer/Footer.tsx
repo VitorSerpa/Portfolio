@@ -7,7 +7,7 @@ const Footer:FC = () =>{
             <div className={styles.navigation}>
                 <h2>Navegação</h2>
                 <ul>
-                    <li><img className={styles.svg} src="/svg/home.svg" alt="Icone email" /><a href="mailto:vitorserpa123@gmail.com" target="_blank">Home</a></li>
+                    <li><img className={styles.svg} src="/svg/home.svg" alt="Icone home" /><a href="mailto:vitorserpa123@gmail.com" target="_blank">Home</a></li>
                     <li><img className={styles.svg} src="/svg/about.svg" alt="" /><a href="github.com/VitorSerpa" target="_blank">Sobre</a></li>
                     <li><img className={styles.svg} src="/svg/contact.svg" alt="" /><a href="https://www.linkedin.com/in/vitor-serpa-925b46322/" target="_blank">Contato</a></li>
                     <li><img className={styles.svg} src="/svg/project.svg" alt="" /><a href="wa.me/12981312111" target="_blank">Projetos</a></li>

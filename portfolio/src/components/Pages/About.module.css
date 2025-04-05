@@ -15,10 +15,12 @@
     text-align: justify; 
     overflow-wrap: break-word; 
     word-break: break-word;    
+    margin-bottom: 2rem;
 }   
 
 .a{
-    font-size: clamp(18px, 2vw, 25px);
+    font-size: clamp(20px, 1.5vw, 26px);
+
 }
 
 .a :hover{
@@ -27,13 +29,18 @@
 
 .p{
     margin-top: 2rem;
-    font-size: clamp(18px, 2vw, 25px);
+    font-size: clamp(20px, 1.5vw, 26px);
 }
 
 @media (max-width: 1024px) {
     .img{
         height: 300px;
         width: 300px;
+    }
+
+    .description{
+        width: 80%;
+        margin-bottom: 3rem;
     }
 }
 
