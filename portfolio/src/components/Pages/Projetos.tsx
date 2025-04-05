@@ -155,7 +155,7 @@ const Projetos: FC = () => {
                 <img src="/images/portfolio.png" alt="Meu portfolio" />
                 <article className={styles.article}>    
                     <a href="#" className={styles.a}><Button nameButton="Portfolio"></Button></a>
-                    <p>Minha primeira experiencia criando meu portfólio, tenho inumeras ideias de como o melhora-lo em que vou ir implementando com o tempo.</p>
+                    <p>Meu primeiro portfólio!!.</p>
                     <div className={styles.technologies}>
                         <h3>Tecnologias:</h3> 
                         <div className={styles.tooltip}>
