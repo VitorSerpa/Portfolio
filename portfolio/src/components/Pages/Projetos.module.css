@@ -23,8 +23,9 @@
     justify-content: space-between;
     border: 1px white solid;
     border-radius: 10px;
-    width: 28%;
-    height: 75vh;
+    width: clamp(280px, 30%, 500px);
+height: auto;
+aspect-ratio: 3 / 4;
     min-width: 400px;
     padding: 1rem;
 }
@@ -84,8 +85,8 @@ p{
 .svg {
     margin-top: 0.4rem;
     margin-left: 0.7rem;
-    width: 40px !important;
-    height: 40px !important;
+    width: clamp(20px, 5vw, 40px) !important;
+  height: clamp(20px, 5vw, 40px) !important;
     background-color: #ffffff;
     object-fit: contain; 
     border-radius: 10px;
