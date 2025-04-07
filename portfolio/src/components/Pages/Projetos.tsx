@@ -12,7 +12,7 @@ const Projetos: FC = () => {
             <div className={styles.projectCard}>
                 <img src="/images/tccImage.jpeg" alt="Imagem do TCC" />
                 <article className={styles.article}>    
-                    <a href="#" className={styles.a}><Button nameButton="TCC"></Button></a>
+                    <a href="/projetos/tcc" className={styles.a}><Button nameButton="TCC"></Button></a>
                     <p>Refatoração do sistema de registros de presenças acâdemicas do cólegio Técnico UNIVAP.</p>
                     <div className={styles.technologies}>
                         <h3>Tecnologias:</h3> 

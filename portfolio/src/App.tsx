@@ -6,6 +6,7 @@ import Main from "./components/Main/Main"
 import Footer from './components/Footer/Footer';
 import About from "./components/Pages/About"
 import Projetos from './components/Pages/Projetos';
+import Tcc from './components/ProjectPages/Tcc';
 import NotFound from './components/Pages/NotFound';
 import './App.css';
 import "./global.css"
@@ -24,6 +25,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path='/projetos' element={<Projetos />} />
+              <Route path='/projetos/tcc' element={<Tcc />} />
               <Route path='/sobre' element={<About />} />
               <Route path='*' element={<NotFound/>}/>
             </Routes>

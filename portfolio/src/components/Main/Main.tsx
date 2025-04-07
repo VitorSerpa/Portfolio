@@ -6,7 +6,7 @@ const Main: FC = () =>{
     return (
         <main className={styles.main}>
             <section className={styles.sectionWelcome}>
-                <h2>Eu sou o Vitor!</h2>
+                <h2 >Eu sou o Vitor!</h2>
                 <p>
                     Meu nome é Vitor Serpa, atualmente estou cursando Desenvolvimento de Software Multiplataforma na FATEC-SJC. Apaixonado por tecnologia, 
                     estou sempre aberto para conhecer novas pessoas e realizar novos projetos!

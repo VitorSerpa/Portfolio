@@ -1,10 +1,12 @@
 .footer{
-    border-top: solid 1px white;
+    border-top: solid 3px #1e1e1e;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #000000;
     min-height: 11rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 
