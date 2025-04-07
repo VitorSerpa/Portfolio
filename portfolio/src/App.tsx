@@ -5,7 +5,7 @@ import Header from "./components/Header/Header"
 import Main from "./components/Main/Main"
 import Footer from './components/Footer/Footer';
 import About from "./components/Pages/About"
-import Projetos from './components/Pages/Projetos';
+import Projetos from './components/Pages/Projects';
 import Tcc from './components/ProjectPages/Tcc';
 import NotFound from './components/Pages/NotFound';
 import Pyoneers from './components/ProjectPages/Pyoneers';

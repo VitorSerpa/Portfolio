@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./Projetos.module.css"
+import styles from "./Projects.module.css"
 import Button from "../Inputs/Button";
 import { FC } from "react";
 
@@ -70,24 +70,6 @@ const Projetos: FC = () => {
                 </article>
             </div>
             <div className={styles.projectCard}>
-                <img src="/images/certificado.jpeg" alt="Certificado de vencedor da maratona de programação Junior" />
-                <article className={styles.article}>    
-                    <a href="#" className={styles.a}><Button nameButton="Pyoneers"></Button></a>
-                    <p>Vencedor junto do meu grupo Pyoneers da 13º maratona de programação Junior da Universidade do Vale do Paraiba em 2024.</p>
-                    <div className={styles.technologies}>
-                        <h3>Tecnologias:</h3> 
-                        <div className={styles.tooltip}>
-                            <img className={styles.svg} src={"/svg/python.svg"} alt="PYTHON Icon" />
-                            <span className={styles.tooltipText}>PYTHON</span>
-                        </div>
-                        <div className={styles.tooltip}>
-                            <img className={styles.svg} src={"/svg/java.svg"} alt="JAVA Icon" />
-                            <span className={styles.tooltipText}>JAVA</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div className={styles.projectCard}>
                 <img src="/images/chart.png" alt="Gráfico demonstrativo" />
                 <article className={styles.article}>    
                     <a href="#" className={styles.a}><Button nameButton="Analise de cargas de SP"></Button></a>
@@ -121,6 +103,28 @@ const Projetos: FC = () => {
                         <div className={styles.tooltip}>
                             <img className={styles.svg} src={"/svg/figma.svg"} alt="FIGMA Icon" />
                             <span className={styles.tooltipText}>FIGMA</span>
+                        </div>
+                        <div className={styles.tooltip}>
+                            <img className={styles.svg} src={"/svg/mysql.svg"} alt="MySQL Icon" />
+                            <span className={styles.tooltipText}>MYSQL</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div className={styles.projectCard}>
+                <img src="/images/certificado.jpeg" alt="Certificado de vencedor da maratona de programação Junior" />
+                <article className={styles.article}>    
+                    <a href="#" className={styles.a}><Button nameButton="Pyoneers"></Button></a>
+                    <p>Vencedor junto do meu grupo Pyoneers da 13º maratona de programação Junior da Universidade do Vale do Paraiba em 2024.</p>
+                    <div className={styles.technologies}>
+                        <h3>Tecnologias:</h3> 
+                        <div className={styles.tooltip}>
+                            <img className={styles.svg} src={"/svg/python.svg"} alt="PYTHON Icon" />
+                            <span className={styles.tooltipText}>PYTHON</span>
+                        </div>
+                        <div className={styles.tooltip}>
+                            <img className={styles.svg} src={"/svg/java.svg"} alt="JAVA Icon" />
+                            <span className={styles.tooltipText}>JAVA</span>
                         </div>
                     </div>
                 </article>
