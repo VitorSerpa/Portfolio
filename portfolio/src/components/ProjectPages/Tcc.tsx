@@ -7,6 +7,10 @@ const Tcc:FC = () =>{
             <section className={styles.description}>
                 <h1 className={styles.title}>REESTRUTURAÇÃO DO SISTEMA DE VERIFICAÇÃO DE FALTAS ACADÊMICAS:</h1>
 
+                <div className={styles.images}>
+                        <img src="/images/tccImage.png" alt="Exemplo de Imagem do TCC" />
+                        <img src="/images/tccImage1.png" alt="Exemplo de Imagem do TCC" />
+                </div>
                 <h1>Objetivos:</h1>
                 <p>
                     Objetiva-se, com este trabalho reestruturar o sistema, bem como os processos de controle de registros de faltas / presenças dos alunos; enviar e-mails aos responsáveis legais diante de faltas do aluno durante o período de aula do dia; possibilitar saídas antecipadas de alunos antes do fechamento das faltas; e utilizar uma linguagem de programação de uso gratuito(Python) com gerenciador de banco de dados MySQL.
@@ -19,12 +23,7 @@ const Tcc:FC = () =>{
                 <h1>Conclusão</h1>
                 <p>
                     Conclui-se que o sistema desenvolvido cumpriu os objetivos propostos inicialmente. Foi criado o módulo de envio de e-mails, não existente no sistema antigo. Foram implementadossistemas  de  prevenção  e  esclarecimento  de  possíveis  erros  de  importação  de  dados.  Outras possibilidades de filtros de informações foram desenvolvidas nas telas do sistema, atendendo,com isso, as necessidades dos usuários.
-                </p>
-                <h1>Imagens:</h1>
-                <div className={styles.images}>
-                        <img src="/images/tccImage.png" alt="Exemplo de Imagem do TCC" />
-                        <img src="/images/tccImage1.png" alt="Exemplo de Imagem do TCC" />
-                </div>
+                </p>                
             </section>
             
         </div>

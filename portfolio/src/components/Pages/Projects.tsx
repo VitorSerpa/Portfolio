@@ -114,7 +114,7 @@ const Projetos: FC = () => {
             <div className={styles.projectCard}>
                 <img src="/images/certificado.jpeg" alt="Certificado de vencedor da maratona de programação Junior" />
                 <article className={styles.article}>    
-                    <a href="#" className={styles.a}><Button nameButton="Pyoneers"></Button></a>
+                    <a href="/projetos/pyoneers" className={styles.a}><Button nameButton="Pyoneers"></Button></a>
                     <p>Vencedor junto do meu grupo Pyoneers da 13º maratona de programação Junior da Universidade do Vale do Paraiba em 2024.</p>
                     <div className={styles.technologies}>
                         <h3>Tecnologias:</h3> 

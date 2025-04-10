@@ -9,6 +9,7 @@ import Projetos from './components/Pages/Projects';
 import Tcc from './components/ProjectPages/Tcc';
 import NotFound from './components/Pages/NotFound';
 import Pyoneers from './components/ProjectPages/Pyoneers';
+import RefatoracaoProject from "./components/ProjectPages/RefatoracaoProject"
 import './App.css';
 import "./global.css"
 
@@ -29,6 +30,7 @@ function App() {
               <Route path='/projetos/tcc' element={<Tcc />} />
               <Route path='/projetos/pyoneers' element={<Pyoneers />} />
               <Route path='/sobre' element={<About />} />
+              <Route path='/projetos/refatoracao' element={<RefatoracaoProject />} />
               <Route path='*' element={<NotFound/>}/>
             </Routes>
           </div>
