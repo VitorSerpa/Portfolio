@@ -30,7 +30,7 @@ const Projetos: FC = () => {
             <div className={styles.projectCard}>
                 <img src="/images/avenueImage.jpeg" alt="Imagem de veiculos sendo reconhecidos por câmera" />
                 <article className={styles.article}>    
-                    <a href="#" className={styles.a}><Button nameButton="Refatoração semafórica"></Button></a>
+                    <a href="/projetos/refatoracao" className={styles.a}><Button nameButton="Refatoração semafórica"></Button></a>
                     <p>Projeto de plataforma WEB e IA para reconhecimento de tráfego urbano e refatoração semáforica em conjunto com professor do ITA (Em desenvolvimento).</p>
                     <div className={styles.technologies}>
                         <h3>Tecnologias:</h3> 
