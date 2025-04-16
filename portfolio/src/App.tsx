@@ -10,6 +10,7 @@ import Tcc from './components/ProjectPages/Tcc';
 import NotFound from './components/Pages/NotFound';
 import Pyoneers from './components/ProjectPages/Pyoneers';
 import RefatoracaoProject from "./components/ProjectPages/RefatoracaoProject"
+import CargasSP from './components/ProjectPages/CargasSP';
 import './App.css';
 import "./global.css"
 
@@ -31,6 +32,7 @@ function App() {
               <Route path='/projetos/pyoneers' element={<Pyoneers />} />
               <Route path='/sobre' element={<About />} />
               <Route path='/projetos/refatoracao' element={<RefatoracaoProject />} />
+              <Route path='/projetos/cargasSP' element={<CargasSP />} />
               <Route path='*' element={<NotFound/>}/>
             </Routes>
           </div>

@@ -72,7 +72,7 @@ const Projetos: FC = () => {
             <div className={styles.projectCard}>
                 <img src="/images/chart.png" alt="Gráfico demonstrativo" />
                 <article className={styles.article}>    
-                    <a href="#" className={styles.a}><Button nameButton="Analise de cargas de SP"></Button></a>
+                    <a href="/projetos/cargasSP" className={styles.a}><Button nameButton="Analise de cargas de SP"></Button></a>
                     <p>Projeto para análise gráfica de todas as exportações e importações feitas pelo Estado de São Paulo entre os anos de 2013 e 2023. (Em desenvolvimento)</p>
                     <div className={styles.technologies}>
                         <h3>Tecnologias:</h3> 
