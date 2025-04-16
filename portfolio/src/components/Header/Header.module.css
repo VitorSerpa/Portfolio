@@ -32,15 +32,15 @@
     color: #8F8F8F;
     text-decoration: none;
     margin-left: 3rem;
-    font-family: "Albert Sans"; /* Garante consistência */
+    font-family: "Albert Sans"; 
     
 }
 
 @media (max-width: 1024px) {
     .header {
-        grid-template-columns: 1fr; /* Muda para uma única coluna */
-        grid-template-rows: auto auto; /* Cria duas linhas */
-        justify-items: center; /* Centraliza os itens horizontalmente */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+        justify-items: center; 
         text-align: center;
         padding: 1rem;
     }
@@ -72,11 +72,11 @@
     }
 
     .header h1 {
-        font-size: 24px; /* Diminui o tamanho da fonte em telas menores */
+        font-size: 24px;
     }
 
     .nav {
-        flex-direction: column; /* Empilha os links em telas muito pequenas */
+        flex-direction: column;
         gap: 0.5rem;
     }
 

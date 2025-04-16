@@ -4,14 +4,14 @@
 }
 
 .main h2 {
-    font-size: clamp(42px, 5vw, 42px); /* Mantém 42px como tamanho máximo */
+    font-size: clamp(42px, 5vw, 42px); 
     color: #ffffff;
     font-weight: normal;
     font-family: "Albert Sans";
 }
 
 .main p {
-    font-size: clamp(18px, 2vw, 30px); /* Mantém os tamanhos entre 18px e 30px */
+    font-size: clamp(18px, 2vw, 30px); 
     color: #8F8F8F;
     text-decoration: none;
     font-family: "Albert Sans";

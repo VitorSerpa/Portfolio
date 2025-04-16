@@ -24,8 +24,8 @@
     border: 1px white solid;
     border-radius: 10px;
     width: clamp(280px, 30%, 500px);
-height: auto;
-aspect-ratio: 3 / 4;
+    height: auto;
+    aspect-ratio: 3 / 4;
     min-width: 400px;
     padding: 1rem;
 }
