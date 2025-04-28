@@ -1,6 +1,6 @@
 h1 {
     font-family: "Albert Sans", sans-serif;
-    font-size: clamp(24px, 4vw, 36px);
+    font-size: clamp(24px, 4vw, 32px);
     color: #ffffff;
     margin: 0.5rem 0;
     background-color: transparent;

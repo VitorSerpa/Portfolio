@@ -1,22 +1,20 @@
 import React, { FC } from "react";
 import styles from "./Main.module.css"
-import Button from "../Inputs/Button";
 
 const Main: FC = () =>{
     return (
         <main className={styles.main}>
-            <section className={styles.sectionWelcome}>
-                <h2 >Eu sou o Vitor!</h2>
-                <p>
-                    Meu nome é Vitor Serpa, atualmente estou cursando Desenvolvimento de Software Multiplataforma na FATEC-SJC. Apaixonado por tecnologia, 
-                    estou sempre aberto para conhecer novas pessoas e realizar novos projetos!
-                </p>
-                <a href="/projetos"><Button nameButton="Veja meus Projetos!"></Button></a>
+            <section className={styles.sectionTitle}>
+                <h1>Olá, eu sou o Vitor</h1>
+                <p>Desenvolvedor Full-Stack</p>
+                <div>
+                    <button>Baixe meu CV</button>
+                    <button>Entre em contato</button>
+                </div>
             </section>
-
-            <section className={styles.sectionImage}>
-                <img className={styles.myImg} src="/images/VitorSerpa.png" alt="Imagem do Autor do site Vitor Serpa" />
-            </section>
+            <aside className={styles.sectionImg}>
+                <img src="" alt="Minha imagem" />
+            </aside>
         </main>
     )
 }

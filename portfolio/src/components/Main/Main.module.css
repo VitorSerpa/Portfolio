@@ -1,100 +1,13 @@
-.main {
+.main{
+    background-color: #18141C;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 4rem;
+}
+.sectionImg{
+    grid-column: 6/8;
 }
 
-.main h2 {
-    font-size: clamp(42px, 5vw, 42px); 
-    color: #ffffff;
-    font-weight: normal;
-    font-family: "Albert Sans";
-}
-
-.main p {
-    font-size: clamp(18px, 2vw, 30px); 
-    color: #8F8F8F;
-    text-decoration: none;
-    font-family: "Albert Sans";
-    margin-top: 2rem;
-}
-
-.sectionWelcome {
-    margin-top: 10rem;
-    grid-column: 3 / 8;
-    text-align: justify;
-}
-
-.sectionImage {
-    grid-column: 10 / 15;
-    justify-self: end;
-    margin-top: 5rem;
-}
-
-.myImg {
-    margin-bottom: 2rem;
-    max-height: max-content;
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-}
-
-@media (max-width: 1024px) {
-    .main h2 {
-        font-size: clamp(38px, 4vw, 42px);
-    }
-
-    .main p {
-        font-size: clamp(20px, 1.8vw, 28px);
-    }
-}
-
-@media (max-width: 768px) {
-    .main h2 {
-        font-size: clamp(32px, 4vw, 42px);
-    }
-
-    .main p {
-        font-size: clamp(20px, 1.5vw, 26px);
-    }
-
-    .sectionWelcome {
-        margin-top: 2rem;
-        grid-column: 2 / 16;
-        text-align: center;
-    }
-
-    .sectionImage {
-        grid-column: 4 / 14;
-        justify-self: center;
-    }
-
-    .myImg {
-        max-width: 250px;
-    }
-
-    
-}
-
-@media (max-width: 480px) {
-    .main h2 {
-        font-size: clamp(28px, 6vw, 42px);
-    }
-
-    .main p {
-        font-size: clamp(20px, 1.5vw, 26px);
-
-    }
-
-    .sectionWelcome {
-        margin-top: 2rem;
-    }
-
-    .myImg {
-        max-width: 200px;
-    }
-
-    .sectionImage {
-        
-        margin-top: 2rem;
-    }
+.sectionTitle{
+    grid-column: 3/5;
 }
