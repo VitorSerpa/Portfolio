@@ -1,13 +1,122 @@
-.main{
+.main {
     background-color: #18141C;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    margin-top: 4rem;
-}
-.sectionImg{
-    grid-column: 6/8;
+    height: 200vh;
+    display: flex;
+    flex-direction: column; /* <--- IMPORTANTE */
+    justify-content: start; /* não precisa mais center */
+    align-items: center; 
+    padding: 6rem 5.5rem;
 }
 
-.sectionTitle{
-    grid-column: 3/5;
+.banner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.intro, .profile {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions {
+    margin-top: 2rem;
+    display: flex; /* Isso coloca os botões na mesma linha */
+    gap: 0.8rem; /* Espaçamento entre os botões */
+}
+
+.button1, .button2 {
+    text-decoration: none; 
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px;
+    padding: 0.7rem 2.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 1px #8800ff;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #8800ff;
+    transform: scale(0.95); 
+}
+
+.button2{
+    margin-left: 0.8rem;
+}
+
+.img {
+    width: 70%; 
+    max-width: 350px; 
+    border-radius: 50%;
+    border: 3px solid #8800ff;
+    transition: all 0.2s ease;
+}
+
+.img:hover {
+    transform: scale(0.95); 
+    cursor: pointer;
+}
+
+.scrollDown {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.purpleTitle {
+    color: #a844ff;
+    transition: transform 0.2s ease; 
+    display: inline-block;  
+}
+
+.purpleTitle:hover {
+    transform: scale(0.95); 
+    cursor: pointer;
+}
+.arrowWrapper {
+    animation: moveArrow 2.5s infinite ease-in-out;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    border-bottom: 2px solid #8800ff;
+    border-right: 2px solid #8800ff;
+    transform: rotate(45deg);
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.about{
+    text-align: justify;
+    margin-top: 5rem;
+    width: 60%;
+}
+
+.about h1{
+    text-align: left;
+}
+.about p{
+    margin-top: 1rem;
 }
