@@ -20,16 +20,26 @@ const Main: FC = () => {
                     <img className={styles.img} src="/images/VitorSerpa2bc.png" alt="" />
                 </div>
             </section>
+                <div className={styles.scrollDown + ' ' + styles.lowResolution}>
+                    <span className={styles.purpleTitle}>Role para baixo!</span>
+                    <div className={styles.arrowWrapper}>
+                        <div className={styles.arrow}></div>
+                    </div>
+                </div>
             <section className={styles.about}>
                 <h1>Sobre mim:</h1>
                 <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação, atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco em minha jornada me especializar no desenvolvimento WEB e possuo e grande interesse na área de inteligência artificial e estrutura de dados.</p>
             </section>
-            <div className={styles.scrollDown}>
+            <div className={styles.scrollDown + ' ' + styles.highResolution}>
                 <span className={styles.purpleTitle}>Role para baixo!</span>
                 <div className={styles.arrowWrapper}>
                     <div className={styles.arrow}></div>
                 </div>
             </div>
+            <section className={styles.skills}>
+                <h1>Habilidades:</h1>
+                <div></div>
+            </section>
         </main>
     )
 }
