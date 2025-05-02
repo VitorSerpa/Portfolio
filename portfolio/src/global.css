@@ -9,7 +9,7 @@ h1 {
   
   h2 {
     font-family: "Albert Sans", sans-serif;
-    font-size: clamp(18px, 3vw, 24px);
+    font-size: clamp(24px, 4vw, 34px);
     color: #ffffff;
     margin: 0.5rem 0;
     background-color: transparent;
