@@ -1,6 +1,5 @@
 body{
     height: 120vh;
-    
 }
 html {
   scroll-behavior: smooth;
@@ -8,3 +7,4 @@ html {
 .welcomeSection{
   min-height: 100vh;
 }
+

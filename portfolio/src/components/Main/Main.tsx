@@ -1,8 +1,47 @@
-import React, { FC } from "react";
-import styles from "./Main.module.css"
-import Button from "../Inputs/Button";
+import React, { FC, useEffect, useRef, useState } from "react";
+import styles from "./Main.module.css";
+import { title } from "process";
 
 const Main: FC = () => {
+
+    const skillsList = [
+        ["HTML", "html5"],
+        ["CSS", "css"],
+        ["SASS", "sass"],
+        ["Javascript", "javascript"],
+        ["Typescript", "typescript"],
+        ["React", "react"],
+        ["Node.JS", "node"],
+        ["MySQL", "mysql"],
+        ["Figma", "figma"],
+        ["Java", "java"],
+        ["Python", "python"],
+        ["Flask", "flask"],
+        ["COLAB", "googlecolab"],
+        ["OpenCV", "opencv"],
+        ["YOLO", "yolo"]
+    ];
+
+    const projectList = [
+        {
+            projectName: "Projeto de reconhecimento de veículos e refatoração de semáforos",
+            normalImg: "/images/normalImages/avenueImage.jpeg",
+            darkImg: "/images/darkImages/avenueImage.png",
+            description: "Projeto de plataforma WEB e IA para reconhecimento de tráfego urbano e refatoração semáforica em conjunto com professor do ITA (Em desenvolvimento)."
+
+        },
+        {
+            projectName: "Refatroação do sistema de registro de presença escolar",
+            img: "/images/tccImage.jpeg",
+            description: "Ferramenta de visualização de tráfego urbano em tempo real com alertas e interface visual baseada em dados."
+        },
+        {
+            projectName: "Refatroação do sistema de registro de presença escolar",
+            img: "/images/tccImage.jpeg",
+            description: "Ferramenta de visualização de tráfego urbano em tempo real com alertas e interface visual baseada em dados."
+        },
+    ]
+
     return (
         <main className={styles.main}>
             <section className={styles.banner}>
@@ -17,31 +56,43 @@ const Main: FC = () => {
                     </div>
                 </div>
                 <div className={styles.profile}>
-                    <img className={styles.img} src="/images/VitorSerpa2bc.png" alt="" />
+                    <img className={styles.img} src="/images/VitorSerpa2bc.png" alt="Vitor Serpa" />
                 </div>
             </section>
-                <div className={styles.scrollDown + ' ' + styles.lowResolution}>
-                    <span className={styles.purpleTitle}>Role para baixo!</span>
-                    <div className={styles.arrowWrapper}>
-                        <div className={styles.arrow}></div>
-                    </div>
-                </div>
+
             <section className={styles.about}>
                 <h1>Sobre mim:</h1>
-                <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação, atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco em minha jornada me especializar no desenvolvimento WEB e possuo e grande interesse na área de inteligência artificial e estrutura de dados.</p>
+                <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação. Atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco me especializar no desenvolvimento WEB, com grande interesse em inteligência artificial e estrutura de dados.</p>
             </section>
-            <div className={styles.scrollDown + ' ' + styles.highResolution}>
-                <span className={styles.purpleTitle}>Role para baixo!</span>
-                <div className={styles.arrowWrapper}>
-                    <div className={styles.arrow}></div>
-                </div>
-            </div>
-            <section className={styles.skills}>
+
+            <section className={`${styles.skills}`}>
                 <h1>Habilidades:</h1>
-                <div></div>
+                <div className={styles.icons}>
+                    {skillsList.map(([label, icon]) => (
+                        <div
+                            className={styles.icon}
+                        >
+                            <p>{label}</p>
+                            <img className={styles.iconConfig} src={`/svg/${icon}.svg`} alt={label} />
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <section className={styles.projects}>
+                <h1>Projetos:</h1>
+                <div className={styles.projectsSection}>
+                    {projectList.map((dic) => (
+                        <div className={styles.projectCard} key={dic.projectName}>
+                            <img className={styles.normalImage} src={dic.normalImg} alt={dic.darkImg} />
+                            <div className={styles.skillsProjectCard}>
+                                <h3>{dic.projectName}</h3>
+                            </div>  
+                        </div>
+                    ))}
+                </div>
             </section>
         </main>
-    )
-}
+    );
+};
 
-export default Main 
+export default Main;
