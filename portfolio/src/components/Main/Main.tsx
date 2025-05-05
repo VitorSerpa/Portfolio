@@ -1,5 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import styles from "./Main.module.css";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import { title } from "process";
 
 const Main: FC = () => {
@@ -13,11 +14,14 @@ const Main: FC = () => {
         ["React", "react"],
         ["Node.JS", "node"],
         ["MySQL", "mysql"],
-        ["Figma", "figma"],
         ["Java", "java"],
+        ["C#", "csharp"],
+        ["Unity", "unity"],
         ["Python", "python"],
+        ["Pandas", "pandas"],
+        ["CTkinter", "custom tkinter"],
         ["Flask", "flask"],
-        ["COLAB", "googlecolab"],
+        ["COLAB", "google colab"],
         ["OpenCV", "opencv"],
         ["YOLO", "yolo"]
     ];
@@ -29,7 +33,7 @@ const Main: FC = () => {
             darkImg: "/images/darkImages/avenueImage.png",
             description: "Projeto de plataforma WEB e IA parasenvolvimento).",
             svgs: [
-                "python", "yolo", "opencv", "googlecolab", "react"
+                "python", "yolo", "opencv", "google colab", "react"
             ]
         },
         {
@@ -38,18 +42,19 @@ const Main: FC = () => {
             darkImg: "/images/darkImages/tccImage.png",
             description: "Projeto de plataforma WEB e IA (Em desenvolvimento).",
             svgs: [
-                1, 2
+                "python", "mysql", "custom tkinter"
             ]
         },
         {
-            projectName: "Analise de cargas de SP",
+            projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
             normalImg: "/images/normalImages/analiseSP.png",
             darkImg: "/images/darkImages/analiseSP.png",
             description: "Projeto de plataforma WEB e IA  desenvolvimento).",
             svgs: [
-                1, 2
+                "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
             ]
         },
+        
     ]
 
     return (
@@ -92,20 +97,14 @@ const Main: FC = () => {
                 <h1>Projetos:</h1>
                 <h2>Destaques:</h2>
                 <div className={styles.projectsSection}>
-                    {projectList.map((dic) => (
-                        <div className={styles.projectCard} key={dic.projectName}>
-                            <img className={styles.darkImage} src={dic.darkImg} alt={dic.darkImg} />
-                            <img className={styles.normalImage} src={dic.normalImg} alt={dic.normalImg} />
-                            <div className={styles.skillsProjectCard}>
-                                <h3>{dic.projectName}</h3>
-                                {dic.svgs.map((element, index) => (
-                                    <img src={`svg/${element}.svg`} alt="" className={styles.svg} />
-                                ))}
-                            </div>
-                            <div className={styles.hoverDescription}>
-                                <button className={styles.seeMore}>Veja mais!</button>
-                            </div>
-                        </div>
+                    {projectList.map((project) => (
+                        <ProjectCard
+                            key={project.projectName}
+                            projectName={project.projectName}
+                            darkImg={project.darkImg}
+                            normalImg={project.normalImg}
+                            svgs={project.svgs}
+                        />
                     ))}
                 </div>
                 <div className={styles.linkDiv}>
