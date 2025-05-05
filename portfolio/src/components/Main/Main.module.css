@@ -1,6 +1,6 @@
 .main {
     background-color: #18141C;
-    height: 500vh;
+    height: 350vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -50,6 +50,7 @@
 .button2{
     margin-left: 0.8rem;
 }
+
 
 .img {
     width: 40%; 
@@ -143,6 +144,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.iconButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
 }
 
 .icon p{

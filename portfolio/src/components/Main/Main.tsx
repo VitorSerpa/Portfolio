@@ -1,10 +1,17 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 import styles from "./Main.module.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import { title } from "process";
+import { useNavigate } from 'react-router-dom';
+
 
 const Main: FC = () => {
 
+    const navigate = useNavigate();
+
+    const handleClickIcon = (icon:string) =>{
+        navigate('/techs', { state: icon});
+    }
+    
     const skillsList = [
         ["HTML", "html5"],
         ["CSS", "css"],
@@ -77,7 +84,7 @@ const Main: FC = () => {
 
             <section className={styles.about}>
                 <h1>Sobre mim:</h1>
-                <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação. Atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco me especializar no desenvolvimento WEB, com grande interesse em inteligência artificial e estrutura de dados.</p>
+                <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação. Atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco me especializar no desenvolvimento WEB, com grande interesse na área de inteligência artificial e estrutura de dados.</p>
             </section>
 
             <section className={`${styles.skills}`}>
@@ -85,10 +92,12 @@ const Main: FC = () => {
                 <div className={styles.icons}>
                     {skillsList.map(([label, icon]) => (
                         <div
-                            className={styles.icon}
+                            className={styles.icon} key={icon}
                         >
-                            <p>{label}</p>
-                            <img className={styles.iconConfig} src={`/svg/${icon}.svg`} alt={label} />
+                            <button className={styles.iconButton} onClick={() => handleClickIcon(icon)}>
+                                <p>{label}</p>
+                                <img className={styles.iconConfig} src={`/svg/${icon}.svg`} alt={label} />
+                            </button>
                         </div>
                     ))}
                 </div>

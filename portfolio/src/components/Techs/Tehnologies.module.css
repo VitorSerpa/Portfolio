@@ -1,0 +1,14 @@
+.tech{
+    margin: 2rem 4rem;
+}
+
+.sectionTech{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+

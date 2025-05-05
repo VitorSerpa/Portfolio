@@ -11,10 +11,15 @@ import NotFound from './components/Pages/NotFound';
 import Pyoneers from './components/ProjectPages/Pyoneers';
 import RefatoracaoProject from "./components/ProjectPages/RefatoracaoProject"
 import CargasSP from './components/ProjectPages/CargasSP';
+import Technologies from './components/Techs/Technologies';
 import './App.css';
 import "./global.css"
+import { FC } from 'react';
 
-function App() {
+const App: FC = ()=>{
+
+  
+
   return (
     <motion.div
       initial={{ opacity: 0 }} // Começa invisível
@@ -31,6 +36,7 @@ function App() {
               <Route path='/projetos/tcc' element={<Tcc />} />
               <Route path='/projetos/pyoneers' element={<Pyoneers />} />
               <Route path='/sobre' element={<About />} />
+              <Route path='/techs' element={<Technologies />} />
               <Route path='/projetos/refatoracao' element={<RefatoracaoProject />} />
               <Route path='/projetos/cargasSP' element={<CargasSP />} />
               <Route path='*' element={<NotFound/>}/>
