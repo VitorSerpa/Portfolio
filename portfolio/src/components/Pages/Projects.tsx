@@ -6,7 +6,7 @@ import { FC } from "react";
 
 const projectList = [
     {
-        projectName: "Projeto de reconhecimento de veículos e refatoração de semáforos",
+        projectName: "Reconhecimento de veículos e refatoração de semáforos via visão computacional",
         normalImg: "/images/normalImages/avenueImage.jpeg",
         darkImg: "/images/darkImages/avenueImage.png",
         description: "Projeto de plataforma WEB e IA parasenvolvimento).",
@@ -36,42 +36,33 @@ const projectList = [
         large: false
     },
     {
-        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/analiseSP.png",
-        darkImg: "/images/darkImages/analiseSP.png",
+        projectName: "Maratona de programação Jr. UNIVAP 2024",
+        normalImg: "/images/normalImages/certificado.jpeg",
+        darkImg: "/images/darkImages/certificado.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
+            "python","java"
         ],
         large: false
     },
     {
-        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/analiseSP.png",
-        darkImg: "/images/darkImages/analiseSP.png",
+        projectName: "Reconhecimento de resíduos reciclaveis com Visão Computacional",
+        normalImg: "/images/normalImages/trash-identifier.jpeg",
+        darkImg: "/images/darkImages/trash-identifier.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
+            "python","opencv", "yolo", "google colab", 
         ],
         large: false
     },
     {
-        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/analiseSP.png",
+        projectName: "Paint do Windows",
+        gif: "/images/normalImages/paintGif.gif",
+        normalImg: "/images/normalImages/paintGif.gif",
         darkImg: "/images/darkImages/analiseSP.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
-        ],
-        large: false
-    },
-    {
-        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/analiseSP.png",
-        darkImg: "/images/darkImages/analiseSP.png",
-        description: "Projeto de plataforma WEB e IA  desenvolvimento).",
-        svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
+            "csharp"
         ],
         large: false
     },
@@ -90,7 +81,6 @@ const Projetos: FC = () => {
                             darkImg={project.darkImg}
                             normalImg={project.normalImg}
                             svgs={project.svgs}
-                            className={`${project.large ? styles.projectLarge : ""}`} 
                         />
                     ))}
                 </div>

@@ -5,19 +5,26 @@ type ProjectCardProps = {
   darkImg: string;
   normalImg: string;
   svgs: string[];
-  className?: string; // Tornando className opcional
+  className?: string; 
+  gif?: string;
 };
 
 export default function ProjectCard({
   projectName,
   darkImg,
   normalImg,
+  gif,
   svgs,
 }: ProjectCardProps) {
   return (
     <div className={`${styles.projectCard}`}> 
       <img className={styles.darkImage} src={darkImg} alt={projectName + ' dark'} />
-      <img className={styles.normalImage} src={normalImg} alt={projectName + ' normal'} />
+      {gif ? (
+        <img className={styles.gifImage} src={gif} alt={projectName + ' gif'} />
+      ) : (
+        <img className={styles.normalImage} src={normalImg} alt={projectName + ' normal'} />
+      )}
+
       <div className={styles.skillsProjectCard}>
         <h3>{projectName}</h3>
         {svgs.map((element, index) => (
