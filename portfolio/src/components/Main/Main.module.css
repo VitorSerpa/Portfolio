@@ -1,6 +1,5 @@
 .main {
     background-color: #18141C;
-    height: 350vh;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -166,7 +165,7 @@
 }
 
 .icon:hover{
-    transform: scale(0.95); 
+    transform: scale(1.15); 
 }
 
 .about h1{
@@ -198,12 +197,31 @@
     margin-top: 3.8rem;
 }
 
+
 .linkDiv a {
     position: relative;
     font-size: 18px;
     text-decoration: underline #a844ff 3px;
     color: inherit;
 }
+
+.linkDiv a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.seeMore {
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: underline #a844ff 3px;
+    color: inherit;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .seeMore:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 
 .projectsSection {
     margin-top: 1rem;

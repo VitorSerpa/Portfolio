@@ -117,7 +117,7 @@ const Main: FC = () => {
                     ))}
                 </div>
                 <div className={styles.linkDiv}>
-                    <a href="/projetos">Veja meus projetos!</a>
+                    <a className={styles.seeMore} href="/projetos">Veja meus projetos!</a>
                 </div>
             </section>
         </main>

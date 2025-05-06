@@ -1,14 +1,128 @@
 .tech{
     margin: 2rem 4rem;
+    height: 200vh;
 }
+
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.titleDiv .img{
+    width: 140px;
+}
+
 
 .sectionTech{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    border: solid 1px #a844ff;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+
+.h2Title{
+    font-size: 40px;
 }
 
 
+.descriptionText{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 22px;
+    color: rgb(197, 197, 197);
+}
 
+.descriptionSection{
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.item{
+    font-size: 22px;
+    color:rgb(197, 197, 197);
+    margin-top: 0.2rem;
+}
+
+.advantages{
+    font-size: 40px;
+    margin-top: 3rem;
+}
+
+.advantagesDescription{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    list-style-type: upper-roman;
+}
+.advantagesDescription li::marker {
+    content: counter(list-item, upper-roman) " - ";
+}
+
+
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.icon{
+    background-color: #211d25;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border-bottom: solid 5px #a844ff;
+    border-top-right-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+.icon p{
+    font-size: 20px;
+    color: #a844ff;
+    margin-bottom: 10px;
+}
+
+.iconConfig{
+    width: 50%;
+    background-color: #211d25;
+}
+
+.icon:hover{
+    transform: scale(1.15); 
+}
+
+@media (max-width: 880px){
+    .icon{
+        width: 80px;
+        height: 80px;
+        border-bottom: solid 2px #a844ff;
+    }
+    .icon p{
+        margin-bottom: 2px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px){
+    .icon{
+        margin: 10px;
+    }
+}

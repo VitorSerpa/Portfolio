@@ -8,3 +8,14 @@ html {
   min-height: 100vh;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.welcomeSection {
+  flex: 1;
+  min-height: 100vh;
+}
+
