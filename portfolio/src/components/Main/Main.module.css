@@ -132,8 +132,8 @@
 
 .icon{
     background-color: #211d25;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
     border-bottom: solid 5px #a844ff;
     border-top-right-radius: 18px;
@@ -149,8 +149,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .icon p{

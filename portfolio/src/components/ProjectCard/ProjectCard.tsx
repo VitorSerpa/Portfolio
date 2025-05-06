@@ -1,3 +1,4 @@
+import { a } from 'framer-motion/dist/types.d-B50aGbjN';
 import styles from './ProjectCard.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +9,7 @@ type ProjectCardProps = {
   svgs: string[];
   className?: string;
   gif?: string;
+  linkToProject?:string
 };
 
 export default function ProjectCard({
@@ -16,6 +18,7 @@ export default function ProjectCard({
   normalImg,
   gif,
   svgs,
+  linkToProject
 }: ProjectCardProps) {
   const navigate = useNavigate(); // Correct placement of the hook
 
@@ -27,9 +30,9 @@ export default function ProjectCard({
     <div className={`${styles.projectCard}`}>
       <img className={styles.darkImage} src={darkImg} alt={projectName + ' dark'} />
       {gif ? (
-        <img className={styles.gifImage} src={gif} alt={projectName + ' gif'} />
+        <a href={linkToProject}><img className={styles.gifImage} src={gif} alt={projectName + ' gif'} /></a>
       ) : (
-        <img className={styles.normalImage} src={normalImg} alt={projectName + ' normal'} />
+        <a href={linkToProject}><img className={styles.normalImage} src={normalImg} alt={projectName + ' normal'} /></a>
       )}
 
       <div className={styles.skillsProjectCard}>
@@ -55,7 +58,7 @@ export default function ProjectCard({
             </div>
           ))}
         </div>
-        <button className={styles.seeMore}>Ver sobre</button>
+        <button className={styles.seeMore}><a className={styles.linkProject} href={linkToProject}>Ver sobre</a></button>
       </div>
     </div>
   );

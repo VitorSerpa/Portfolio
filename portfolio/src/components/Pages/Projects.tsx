@@ -13,7 +13,8 @@ const projectList = [
         svgs: [
             "python", "yolo", "opencv", "google colab", "react"
         ],
-        large: true
+        large: true,
+        linkToProject: "/projetos/refatoracao"
     },
     {
         projectName: "Refatoração do sistema de registro de presença do Colégio UNIVAP",
@@ -23,7 +24,8 @@ const projectList = [
         svgs: [
             "python", "mysql", "custom tkinter"
         ],
-        large: false
+        large: false,
+        linkToProject: "/projetos/tcc"
     },
     {
         projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
@@ -31,9 +33,10 @@ const projectList = [
         darkImg: "/images/darkImages/analiseSP.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
+            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas"
         ],
-        large: false
+        large: false,
+        linkToProject: "/projetos/refatoracao"
     },
     {
         projectName: "Maratona de programação Jr. UNIVAP 2024",
@@ -43,7 +46,8 @@ const projectList = [
         svgs: [
             "python","java"
         ],
-        large: false
+        large: false,
+        linkToProject: "/projetos/refatoracao"
     },
     {
         projectName: "Reconhecimento de resíduos reciclaveis com Visão Computacional",
@@ -53,7 +57,8 @@ const projectList = [
         svgs: [
             "python","opencv", "yolo", "google colab", 
         ],
-        large: false
+        large: false,
+        linkToProject: "/projetos/refatoracao"
     },
     {
         projectName: "Paint do Windows",
@@ -64,7 +69,8 @@ const projectList = [
         svgs: [
             "csharp"
         ],
-        large: false
+        large: false,
+        linkToProject: "/projetos/refatoracao"
     },
 ]
 
@@ -81,6 +87,7 @@ const Projetos: FC = () => {
                             darkImg={project.darkImg}
                             normalImg={project.normalImg}
                             svgs={project.svgs}
+                            linkToProject={project.linkToProject}
                         />
                     ))}
                 </div>

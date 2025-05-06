@@ -22,10 +22,10 @@ const App: FC = ()=>{
 
   return (
     <motion.div
-      initial={{ opacity: 0 }} // Começa invisível
-      animate={{ opacity: 1 }} // Aparece suavemente
-      transition={{ duration: 1.5 }} // Duração de 1 segundo
-    >
+      initial={{ x: -100, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    > 
       <Router>
         <div className="App">
           <div className="welcomeSection">
