@@ -1,37 +1,91 @@
-.footer{
+.footer {
     margin: 5rem;
     display: flex;
     justify-content: center;
-}
-
-.title{
+    flex-wrap: wrap; 
+  }
+  
+  .title {
     text-align: center;
-}
-
-.socialMedia{
+    width: 100%; 
+  }
+  
+  .socialMedia {
     display: flex;
-}
-
-.items img{
-    width: 60px;
-}
-
-
-.items{
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 10    0%;
+  }
+  
+  .items {
     margin: 2rem 4rem;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.2s ease-out
-
-}
-.items:hover{
+    transition: 0.2s ease-out;
+    text-align: center; /* Garante que o conteúdo dentro das "items" seja centralizado */
+  }
+  
+  .items img {
+    width: 60px;
+    margin-bottom: 1rem; /* Adiciona espaço entre a imagem e o texto */
+  }
+  
+  .items:hover {
     cursor: pointer;
     transform: scale(1.15);
-}
-
-.p{
+  }
+  
+  .p {
     font-size: 20px;
-}
+  }
+  
+  @media (max-width: 880px) {
+    /* Responsividade para telas menores que 880px */
+    .footer {
+      margin: 2rem; /* Reduz a margem do footer para não ultrapassar as bordas em telas pequenas */
+    }
+  
+    .title {
+      font-size: 2rem; /* Diminui o tamanho do título em telas menores */
+    }
+  
+    .items {
+      margin: 1rem 2rem; /* Ajusta as margens dos itens */
+      font-size: 1.6rem; /* Diminui o tamanho da fonte */
+    }
+  
+    .items img {
+      width: 50px; /* Reduz o tamanho da imagem */
+    }
+  
+    .p {
+      font-size: 16px; /* Diminui o tamanho do texto em dispositivos pequenos */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Responsividade para telas menores que 480px */
+    .footer {
+      margin: 1rem; /* Reduce margin even further for very small screens */
+    }
+  
+    .title {
+      font-size: 1.8rem; /* Reduz o título em telas muito pequenas */
+    }
+  
+    .items {
+      margin: 1rem; /* Diminui a margem dos itens */
+      font-size: 1.4rem; /* Diminui o tamanho da fonte ainda mais */
+    }
+  
+    .items img {
+      width: 40px; /* Reduz as imagens ainda mais */
+    }
+  
+    .p {
+      font-size: 14px; 
+    }
+  }

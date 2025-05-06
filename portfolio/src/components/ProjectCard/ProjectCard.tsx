@@ -1,11 +1,12 @@
 import styles from './ProjectCard.module.css';
+import { useNavigate } from 'react-router-dom';
 
 type ProjectCardProps = {
   projectName: string;
   darkImg: string;
   normalImg: string;
   svgs: string[];
-  className?: string; 
+  className?: string;
   gif?: string;
 };
 
@@ -16,8 +17,14 @@ export default function ProjectCard({
   gif,
   svgs,
 }: ProjectCardProps) {
+  const navigate = useNavigate(); // Correct placement of the hook
+
+  const handleClickIcon = (icon: string) => {
+    navigate('/techs', { state: icon });
+  };
+
   return (
-    <div className={`${styles.projectCard}`}> 
+    <div className={`${styles.projectCard}`}>
       <img className={styles.darkImage} src={darkImg} alt={projectName + ' dark'} />
       {gif ? (
         <img className={styles.gifImage} src={gif} alt={projectName + ' gif'} />
@@ -40,7 +47,10 @@ export default function ProjectCard({
         <div className={styles.svgInfo}>
           {svgs.map((element, index) => (
             <div key={index} className={styles.svgWrapper}>
-              <img src={`svg/${element}.svg`} alt={element} className={styles.svg} />
+              <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
+                <img src={`svg/${element}.svg`} alt={element} className={styles.svg} />
+              </button>
+
               <span className={styles.tooltipText}>{element.toUpperCase()}</span>
             </div>
           ))}

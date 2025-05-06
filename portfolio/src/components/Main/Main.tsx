@@ -58,7 +58,7 @@ const Main: FC = () => {
             darkImg: "/images/darkImages/analiseSP.png",
             description: "Projeto de plataforma WEB e IA  desenvolvimento).",
             svgs: [
-                "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas", "figma"
+                "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas"
             ]
         },
         

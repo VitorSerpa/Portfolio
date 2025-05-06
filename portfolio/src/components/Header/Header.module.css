@@ -3,7 +3,7 @@ header {
     background-color: #18141C;
     display: flex;
     justify-content: center; 
-    border-bottom: 2px solid #8800ff;
+    border-bottom: 2px solid #a844ff;
 }
 
 .nav {
@@ -17,6 +17,13 @@ header {
 .a {
     text-align: center;
     margin: 20px;
+    transition: 0.2s all ease-in-out;
+}
+
+.a:hover{
+    color: #8800ff;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .nav a {

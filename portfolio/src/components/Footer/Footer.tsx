@@ -8,7 +8,7 @@ const Footer: FC = () => {
                 <h1 className={styles.title}>Contato</h1>
                 <div className={styles.socialMedia}>
                     <div className={styles.items}>
-                        <img src="/svg/github.svg" alt="" />
+                        <img src="/svg/github.svg"  alt="" />
                         <a href="">Github</a>
                         <a href=""><p className={styles.p}>VitorSerpa</p></a>
                     </div>

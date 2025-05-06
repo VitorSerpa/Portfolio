@@ -1,15 +1,21 @@
 body{
     height: 120vh;
+    width: auto;
 }
 html {
   scroll-behavior: smooth;
 }
-.welcomeSection{
-  min-height: 100vh;
+.welcomeSection {
+  min-height: 100vh; /* Garantir que a seção ocupe toda a altura da tela */
+  width: 100%;       /* Garantir que ocupe a largura total */
+  display: flex;     /* Se você usar flex, o conteúdo será ajustado ao tamanho */
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
