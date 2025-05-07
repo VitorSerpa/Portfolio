@@ -1,64 +1,59 @@
-.body {
-    text-align: justify;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.main{
+  margin: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-  
-  .description {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  .images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .images img {
-    max-width: 70%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .title {
-    margin-bottom: 2rem;
-  }
-  
-  @media (max-width: 1024px) {
-    .body {
-      margin-left: 3rem;
-      margin-right: 3rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .body {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  
-    .images {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .title {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  
-    .description h1 {
-      font-size: 1.2rem;
-    }
-  
-    .description p {
-      font-size: 1rem;
-    }
-  }
+
+.videoSection{
+  columns: 1 / 2;
+  align-items:start;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.projectDescription{
+  justify-self: start;
+  text-align: justify;
+}
+
+.description h1{
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.description p{
+  margin-bottom: 2rem;
+
+}
+
+.metodology{
+  justify-self: start;
+  text-align: justify;
+  margin-top: 0;
+}
+
+.metodology h1{
+  margin-bottom: 2rem;
+  font-size: 30px;
+  text-align: justify;
+}
+
+
+
+.projectDescription h2{
+  font-size: 26px;
+  text-align: justify;
+}
+
+.description{
+  columns: 2 / 3;
+  align-items:center;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.videoSection video{
+  width: 100%;
+  height: auto;
+}

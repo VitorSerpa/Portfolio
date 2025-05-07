@@ -51,7 +51,7 @@ export default function ProjectCard({
           {svgs.map((element, index) => (
             <div key={index} className={styles.svgWrapper}>
               <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
-                <img src={`svg/${element}.svg`} alt={element} className={styles.svg} />
+                <img rel="preload" src={`svg/${element}.svg`} alt={element} className={styles.svg} />
               </button>
 
               <span className={styles.tooltipText}>{element.toUpperCase()}</span>

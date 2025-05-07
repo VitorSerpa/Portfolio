@@ -29,14 +29,14 @@ const projectList = [
     },
     {
         projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/analiseSP.png",
+        normalImg: "/images/normalImages/chartGif.gif",
         darkImg: "/images/darkImages/analiseSP.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
             "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas"
         ],
         large: false,
-        linkToProject: "/projetos/refatoracao"
+        linkToProject: "/projetos/cargasSP"
     },
     {
         projectName: "Maratona de programação Jr. UNIVAP 2024",
