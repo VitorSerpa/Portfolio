@@ -88,7 +88,7 @@ const Main: FC = () => {
 
     return (
         <main className={styles.main}>
-            <AnimatedSection className={styles.banner}>
+            <section className={styles.banner}>
                 <div className={styles.intro}>
                     <div className={styles.title}>
                         <h1>Olá, eu sou o <a href=""><span className={styles.purpleTitle}>Vitor :)</span></a></h1>
@@ -102,14 +102,14 @@ const Main: FC = () => {
                 <div className={styles.profile}>
                     <img className={styles.img} src="/images/VitorSerpa2bc.png" alt="Vitor Serpa" />
                 </div>
-            </AnimatedSection>
+            </section>
 
             <section className={styles.about}>
                 <h1>Sobre mim:</h1>
                 <p>Olá, meu nome é <b>Vitor Serpa</b>, apaixonado por tecnologia e programação. Atualmente estudo na <b>FATEC-SJC</b>, cursando <b>Desenvolvimento de Software Multiplataforma</b>. Busco me especializar no desenvolvimento WEB, com grande interesse na área de inteligência artificial e estrutura de dados.</p>
             </section>
 
-            <AnimatedSection className={`${styles.skills}`}>
+            <section className={`${styles.skills}`}>
                 <h1>Habilidades:</h1>
                 <div className={styles.icons}>
                     {skillsList.map(([label, icon]) => (
@@ -123,7 +123,7 @@ const Main: FC = () => {
                         </div>
                     ))}
                 </div>
-            </AnimatedSection>
+            </section>
             <AnimatedSection className={styles.projects}>
                 <h1>Projetos:</h1>
                 <h2>Destaques:</h2>

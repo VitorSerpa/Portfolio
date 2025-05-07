@@ -64,7 +64,7 @@ const projectList = [
         projectName: "Paint do Windows",
         gif: "/images/normalImages/paintGif.gif",
         normalImg: "/images/normalImages/paintGif.gif",
-        darkImg: "/images/darkImages/analiseSP.png",
+        darkImg: "/images/darkImages/paintImage.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
             "csharp"

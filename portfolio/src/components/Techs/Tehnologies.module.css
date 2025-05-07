@@ -1,6 +1,5 @@
 .tech{
     margin: 2rem 4rem;
-    height: 200vh;
 }
 
 .titleDiv{
@@ -101,7 +100,7 @@
 }
 
 .iconConfig{
-    width: 50%;
+    width: 40%;
     background-color: #211d25;
 }
 
@@ -119,10 +118,23 @@
         margin-bottom: 2px;
         font-size: 16px;
     }
+    .tech{
+        margin: 2rem 0;
+        height: 200vh;
+    }
+
+    .sectionTech{
+        padding: 0.5rem;
+    }
 }
 
 @media (max-width: 600px){
     .icon{
         margin: 10px;
     }
+    .tech{
+        margin: 2rem 0;
+        height: 200vh;
+    }
+
 }
