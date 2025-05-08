@@ -39,8 +39,9 @@ const CargasSP:FC = () =>{
                     <p>
                         Para a criação do desing do site foi usado o FIGMA, e o desenvolvimento está sendo utilizado HTML, CSS e Javascript. 
                         A fim de realizarmos a normalização e formatação dos dados utilizamos o Google COLAB com a biblioteca PANDAS no qual é adequada
-                        para mexer com arquivos .CSV. Para o armazenamento dos dados está sendo utilizado o banco de dados relacional MySQL que é adequado 
-                        pelo relacionamento entre tabelas. Já no back-end, estamos utilizando o FLASK que é utilizado para realizar as querys SQL no banco de dados. 
+                        para mexer com arquivos .CSV. Para o armazenamento dos dados está sendo utilizado o banco de dados relacional MySQL que é o ideal 
+                        pelo relacionamento entre tabelas. Já no back-end, estamos utilizando o FLASK que é utilizado para criar as querys SQL com base nos filtros
+                        selecionados e realizar a busca no banco de dados. 
                     </p>
                 </aside>
             </section>

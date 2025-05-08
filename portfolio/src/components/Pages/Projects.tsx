@@ -6,12 +6,12 @@ import { FC } from "react";
 
 const projectList = [
     {
-        projectName: "Reconhecimento de veículos e refatoração de semáforos via visão computacional",
+        projectName: "Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial",
         normalImg: "/images/normalImages/avenueImage.jpeg",
         darkImg: "/images/darkImages/avenueImage.png",
         description: "Projeto de plataforma WEB e IA parasenvolvimento).",
         svgs: [
-            "python", "yolo", "opencv", "google colab", "react"
+            "python", "yolo", "opencv", "google colab"
         ],
         large: true,
         linkToProject: "/projetos/refatoracao"
@@ -47,7 +47,7 @@ const projectList = [
             "python","java"
         ],
         large: false,
-        linkToProject: "/projetos/refatoracao"
+        linkToProject: "/projetos/pyoneers"
     },
     {
         projectName: "Reconhecimento de resíduos reciclaveis com Visão Computacional",
@@ -58,7 +58,7 @@ const projectList = [
             "python","opencv", "yolo", "google colab", 
         ],
         large: false,
-        linkToProject: "/projetos/refatoracao"
+        linkToProject: "/projetos/residuos"
     },
     {
         projectName: "Paint do Windows",

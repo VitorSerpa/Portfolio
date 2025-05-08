@@ -15,9 +15,6 @@ const Header: React.FC = () => {
                 <a className={styles.a} href="/sobre">Sobre</a>
                 <a className={styles.a} href="/projetos">Projetos</a>
             </nav>
-            {location.pathname !== '/' && (
-                <button className={styles.back} onClick={() => navigate(-1)}>Voltar</button>
-            )}
         </header>);
 };
 
