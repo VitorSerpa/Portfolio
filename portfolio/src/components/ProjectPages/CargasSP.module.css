@@ -4,11 +4,77 @@
   grid-template-columns: 1fr 1fr;
 }
 
+
+
 .videoSection{
   columns: 1 / 2;
   align-items:start;
   justify-items: center;
   padding: 2rem;
+}
+
+.videoWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.videoHoverDescription {
+  text-align: center;
+  transition: 0.3s ease-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info img{
+  width: 45px;
+  height: 45px;
+  background-color: none;
+  margin: 0.2rem 0.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.info img:hover{
+  transform: scale(1.1);
+}
+
+.seeMore {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: solid 1px #8800ff;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(0.75rem, 1vw + 0.5rem, 1rem); 
+}
+
+.seeMore:hover {
+  background-color: #8800ff;
+  transform: scale(0.95); 
+}
+
+
+.buttonSvg{
+  color: transparent;
+  border: none;
+}
+
+.video{
+  border: 2px solid #a844ff;
+  border-radius: 15px;
 }
 
 .projectDescription{
@@ -18,7 +84,7 @@
 
 .description h1{
   margin-bottom: 2rem;
-  font-size: 30px;
+  font-size: 34px;
   text-align: justify;
 }
 
@@ -35,7 +101,7 @@
 
 .metodology h1{
   margin-bottom: 2rem;
-  font-size: 30px;
+  font-size: 34px;
   text-align: justify;
 }
 
@@ -56,4 +122,65 @@
 .videoSection video{
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    margin: 1rem 2rem;
+  }
+
+  .description,
+  .videoSection {
+    padding: 1rem 0;
+  }
+
+  .description h1,
+  .metodology h1 {
+    font-size: 28px;
+  }
+
+  .projectDescription h2 {
+    font-size: 22px;
+  }
+
+  .info {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .seeMore {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .videoSection video {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 1rem;
+  }
+
+  .description h1,
+  .metodology h1 {
+    font-size: 24px;
+  }
+
+  .projectDescription h2 {
+    font-size: 20px;
+  }
+
+  .info img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .seeMore {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
 }

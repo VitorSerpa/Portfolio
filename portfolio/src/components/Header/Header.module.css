@@ -4,8 +4,8 @@ header {
     display: flex;
     justify-content: center; 
     border-bottom: 2px solid #a844ff;
+    position: relative; 
 }
-
 .nav {
     display: flex;
     align-items: center;
@@ -21,11 +21,36 @@ header {
 }
 
 .a:hover{
-    color: #8800ff;
+    color: #a844ff;
     transform: scale(1.1);
     cursor: pointer;
 }
 
 .nav a {
     background-color: transparent;
+}
+
+.back {
+    position: fixed;
+    bottom: 1rem; 
+    right: 1rem; 
+    border: solid 1px #a844ff;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    background-color: #18141C;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    z-index: 999; 
+}
+
+.back:hover {
+    background-color: #a844ff;
+    transform: scale(1.05);
+}
+
+.back a{
+    background-color: transparent;
+    padding: 0.7rem 2rem;
 }

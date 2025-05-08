@@ -14,7 +14,7 @@ const Footer: FC = () => {
                     </div>
                     <div className={styles.items}>
                         <img src="/svg/whatsapp.svg" alt="" />
-                        <a href="">Whataspp</a>
+                        <a href="">Whatsapp</a>
                         <a href=""><p className={styles.p}>12981312111</p></a>
                         
                     </div>

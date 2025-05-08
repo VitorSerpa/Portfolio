@@ -70,7 +70,7 @@ const projectList = [
             "csharp"
         ],
         large: false,
-        linkToProject: "/projetos/refatoracao"
+        linkToProject: "/projetos/paint"
     },
 ]
 

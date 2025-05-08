@@ -12,6 +12,7 @@ import Pyoneers from './components/ProjectPages/Pyoneers';
 import RefatoracaoProject from "./components/ProjectPages/RefatoracaoProject"
 import CargasSP from './components/ProjectPages/CargasSP';
 import Technologies from './components/Techs/Technologies';
+import Paint from "./components/ProjectPages/Paint"
 import './App.css';
 import "./global.css"
 import { FC } from 'react';
@@ -39,6 +40,7 @@ const App: FC = ()=>{
               <Route path='/techs' element={<Technologies />} />
               <Route path='/projetos/refatoracao' element={<RefatoracaoProject />} />
               <Route path='/projetos/cargasSP' element={<CargasSP />} />
+              <Route path='/projetos/paint' element={<Paint />} />
               <Route path='*' element={<NotFound/>}/>
             </Routes>
           </div>

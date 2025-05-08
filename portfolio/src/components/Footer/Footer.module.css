@@ -21,7 +21,7 @@
   
   .items {
     margin: 2rem 4rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
