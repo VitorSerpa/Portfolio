@@ -38,7 +38,7 @@ const Residuos: FC = () => {
                 <div className={styles.projectDescription}>
                     <h1>Reconhecimento de resíduos reciclaveis através de visão computacional</h1>
                     <p>
-                        Projeto que desenvolvi durante meeu Técnico de Informática na UNIVAP para criação de formas geométricas diversas (Elipse, Circulo, Linha, Triangulo, Quadrado, Losango e Pentagono).
+                        Projeto que 
                         Com personalização de cores, expessura e tipo da linha. O aplicativo foi desenvolvido usando C# com a biblioteca Windows Forms que faz parte do .NET Framework. <br /><br />
                         Para a realização do desenho da elipse foi utilizado a equação, <b>paramétrica da elipse.</b> que é descrita nessa formula: <br /><br />
                         <b>x(t)=h+a⋅cos(t)</b> <br />

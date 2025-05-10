@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Footer.module.css"
+import styles from "./Footer.module.css";
 
 const Footer: FC = () => {
     return (
@@ -8,30 +8,62 @@ const Footer: FC = () => {
                 <h1 className={styles.title}>Contato</h1>
                 <div className={styles.socialMedia}>
                     <div className={styles.items}>
-                        <img src="/svg/github.svg"  alt="" />
-                        <a href="">Github</a>
-                        <a href=""><p className={styles.p}>VitorSerpa</p></a>
+                        <a
+                            target="_blank"
+                            href="https://github.com/VitorSerpa?tab=overview&from=2025-05-01&to=2025-05-10"
+                        >
+                            <img src="/svg/github.svg" alt="" />
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://github.com/VitorSerpa?tab=overview&from=2025-05-01&to=2025-05-10"
+                        >
+                            Github
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://github.com/VitorSerpa?tab=overview&from=2025-05-01&to=2025-05-10"
+                        >
+                            <p className={styles.p}>VitorSerpa</p>
+                        </a>
                     </div>
                     <div className={styles.items}>
-                        <img src="/svg/whatsapp.svg" alt="" />
-                        <a href="">Whatsapp</a>
-                        <a href=""><p className={styles.p}>12981312111</p></a>
-                        
+                        <a href="https://wa.me/12981312111" target="_blank">
+                            <img src="/svg/whatsapp.svg" alt="" />
+                        </a>
+                        <a href="https://wa.me/12981312111" target="_blank">
+                            Whatsapp
+                        </a>
+                        <a href="https://wa.me/12981312111" target="_blank">
+                            <p className={styles.p}>12981312111</p>
+                        </a>
                     </div>
                     <div className={styles.items}>
-                        <img src="/svg/linkedin.svg" alt="" />
-                        <a href="">Linkedin</a>
-                        <a href=""><p className={styles.p}>Vitor Serpa</p></a>
+                        <a href="https://www.linkedin.com/in/vitor-serpa-925b46322/" target="_blank">
+                            <img src="/svg/linkedin.svg" alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/vitor-serpa-925b46322/" target="_blank">
+                            Linkedin
+                        </a>
+                        <a href="https://www.linkedin.com/in/vitor-serpa-925b46322/" target="_blank">
+                            <p className={styles.p}>Vitor Serpa</p>
+                        </a>
                     </div>
                     <div className={styles.items}>
-                        <a href=""><img src="/svg/gmail.svg" alt="" /></a>
-                        <a href="">Gmail</a>
-                        <a href=""><p className={styles.p}>vitorserpa123@gmail.com</p></a>
+                        <a href="mailto:vitorserpa123@gmail.com" target="_blank">
+                            <img src="/svg/gmail.svg" alt="" />
+                        </a>
+                        <a href="mailto:vitorserpa123@gmail.com" target="_blank">
+                            Gmail
+                        </a>
+                        <a href="mailto:vitorserpa123@gmail.com" target="_blank">
+                            <p className={styles.p}>vitorserpa123@gmail.com</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
