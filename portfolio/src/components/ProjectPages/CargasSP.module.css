@@ -5,6 +5,10 @@
 }
 
 
+.videoSection img {
+  width: 100%;
+  height: auto;
+}
 
 .videoSection{
   columns: 1 / 2;
@@ -76,6 +80,7 @@
   border: 2px solid #a844ff;
   border-radius: 15px;
 }
+
 
 .projectDescription{
   justify-self: start;

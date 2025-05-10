@@ -7,7 +7,7 @@ import { FC } from "react";
 const projectList = [
     {
         projectName: "Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial",
-        normalImg: "/images/normalImages/avenueImage.jpeg",
+        normalImg: "/images/normalImages/traviaVideoGif.gif",
         darkImg: "/images/darkImages/avenueImage.png",
         description: "Projeto de plataforma WEB e IA parasenvolvimento).",
         svgs: [
@@ -39,7 +39,7 @@ const projectList = [
         linkToProject: "/projetos/cargasSP"
     },
     {
-        projectName: "Maratona de programação Jr. UNIVAP 2024",
+        projectName: "Vencedor da Maratona de programação Jr. UNIVAP 2024",
         normalImg: "/images/normalImages/certificado.jpeg",
         darkImg: "/images/darkImages/certificado.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
@@ -51,7 +51,7 @@ const projectList = [
     },
     {
         projectName: "Reconhecimento de resíduos reciclaveis com Visão Computacional",
-        normalImg: "/images/normalImages/trash-identifier.jpeg",
+        normalImg: "/images/normalImages/residuosVideoGif.gif",
         darkImg: "/images/darkImages/trash-identifier.png",
         description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
