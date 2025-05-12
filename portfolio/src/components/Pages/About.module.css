@@ -1,59 +1,16 @@
-.img {
-    width: 40%; 
-    height: auto;
-    max-width: 350px; 
-    border-radius: 50%;
-    border: 3px solid #8800ff;
-    transition: all 0.2s ease;
-}
-
 .about{
     padding: 6rem 5.5rem;
-
-}
-
-.about h1{
     text-align: center;
 }
 
-.description{
-    margin-top: 4rem;
+.welcomeSection{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.imageSection{
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    grid-column: 2 / 3;
-}
-
-.descriptionSection h2{
-    margin-bottom: 2rem;
-}
-
-.descriptionSection{
-    padding: 2rem;
-    grid-column: 1 / 2;
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: justify;
-    flex-direction: column;
-    align-items: center;
 }
 
-.descriptionSection h2 {
-    align-self: flex-start;
-    text-align: left;
-}
-
-.actions {
-    margin-top: 2rem;
-    display: flex;
-    gap: 0.8rem; 
+.welcomeTextDiv{
+    grid-column: 1 / 4;
 }
 
 .button1, .button2 {
@@ -74,17 +31,53 @@
     transform: scale(0.95); 
 }
 
-.button2{
-    margin-left: 0.8rem;
+.actions{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 
-
-.about h2, .about img{
-    margin-top: 2rem;
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
 }
-@media (max-width: 1441px) {
-    .img {
-        height: 75%;
-        width: 75%; 
-    }
+
+.icon{
+    background-color: #211d25;
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-bottom: solid 5px #a844ff;
+    border-top-right-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconButton{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.icon p{
+    font-size: 20px;
+    color: #a844ff;
+    margin-bottom: 10px;
+}
+
+.iconConfig{
+    width: 50%;
+    background-color: #211d25;
+}
+
+.icon:hover{
+    transform: scale(1.15); 
 }
