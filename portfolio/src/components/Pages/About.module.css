@@ -1,9 +1,15 @@
 .img {
     width: 40%; 
+    height: auto;
     max-width: 350px; 
     border-radius: 50%;
     border: 3px solid #8800ff;
     transition: all 0.2s ease;
+}
+
+.about{
+    padding: 6rem 5.5rem;
+
 }
 
 .about h1{
@@ -17,20 +23,68 @@
 }
 
 .imageSection{
+    flex: 1;
+    min-width: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     grid-column: 2 / 3;
 }
 
+.descriptionSection h2{
+    margin-bottom: 2rem;
+}
+
 .descriptionSection{
+    padding: 2rem;
     grid-column: 1 / 2;
     display: flex;
-    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptionSection h2 {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.8rem; 
+}
+
+.button1, .button2 {
+    text-decoration: none; 
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px;
+    padding: 0.7rem 2.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    border: solid 1px #8800ff;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #8800ff;
+    transform: scale(0.95); 
+}
+
+.button2{
+    margin-left: 0.8rem;
 }
 
 
+.about h2, .about img{
+    margin-top: 2rem;
+}
 @media (max-width: 1441px) {
     .img {
+        height: 75%;
         width: 75%; 
     }
 }

@@ -16,6 +16,12 @@ h1 {
     font-weight: normal;
   }
   
+  h3{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: normal;
+    
+  }
+
   p {
     font-family: "Albert Sans", sans-serif;
     color: rgb(197, 197, 197);

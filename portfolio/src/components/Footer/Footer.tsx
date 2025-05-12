@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 const Footer: FC = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.socialMedia}>
+            <div className={styles.socialMedia} id="contato">
                 <h1 className={styles.title}>Contato</h1>
                     <div className={styles.items}>
                         <a
