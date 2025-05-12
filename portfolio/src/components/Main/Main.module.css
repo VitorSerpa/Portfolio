@@ -22,6 +22,7 @@
     align-items: center;
 }
 
+
 .actions {
     margin-top: 2rem;
     display: flex;
@@ -73,7 +74,7 @@
 }
 
 .purpleTitle {
-    color: #a844ff;
+    color: 8#a44ff;
     transition: transform 0.2s ease; 
     display: inline-block;  
 }
