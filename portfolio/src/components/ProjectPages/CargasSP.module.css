@@ -32,7 +32,7 @@
 .info{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 .info img{
@@ -49,6 +49,8 @@
 }
 
 .seeMore {
+    margin-left: auto;
+
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -129,6 +131,36 @@
   height: auto;
 }
 
+.tooltipText {
+    visibility: hidden;
+    width: max-content;
+    background-color: black;
+    color: #fff;
+    border: 1px solid white;
+    text-align: center;
+    padding: 4px 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+    left: 130%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+  
+  .svgWrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.svgWrapper:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
@@ -150,13 +182,15 @@
   }
 
   .info {
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .seeMore {
     font-size: 0.9rem;
     padding: 0.3rem 0.8rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 
   .videoSection video {

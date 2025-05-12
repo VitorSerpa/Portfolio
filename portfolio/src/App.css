@@ -6,9 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 .welcomeSection {
-  min-height: 100vh; /* Garantir que a seção ocupe toda a altura da tela */
-  width: 100%;       /* Garantir que ocupe a largura total */
-  display: flex;     /* Se você usar flex, o conteúdo será ajustado ao tamanho */
+  min-height: 100vh; 
+  width: 100%;       
+  display: flex;    
   flex-direction: column;
   overflow-x: hidden;
 }

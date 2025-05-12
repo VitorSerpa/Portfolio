@@ -17,8 +17,8 @@ const Paint: FC = () => {
                 <div className={styles.videoWrapper}>
                     <div className={styles.videoHoverDescription}>
                         <div className={styles.info}>
-                            <div>
-                                {icons.map((element, index) => (
+                            {icons.map((element, index) => (
+                                <div className={styles.svgWrapper}>
                                     <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
                                         <img
                                             key={index}
@@ -27,8 +27,10 @@ const Paint: FC = () => {
                                             className={styles.svg}
                                         />
                                     </button>
-                                ))}
-                            </div>
+                                    <span className={styles.tooltipText}>{element.toUpperCase()}</span>
+                                </div>
+                            ))}
+
                             <a href="https://github.com/VitorSerpa/CS-Paint" target="_blank" className={styles.seeMore}>
                                 Baixar Certificado
                             </a>

@@ -55,7 +55,7 @@ const Main: FC = () => {
     const projectList = [
         {
             projectName: "Projeto de reconhecimento de veículos e refatoração de semáforos",
-            normalImg: "/images/normalImages/avenueImage.jpeg",
+            normalImg: "/images/normalImages/traviaVideoGif.gif",
             darkImg: "/images/darkImages/avenueImage.png",
             description: "Projeto de plataforma WEB e IA parasenvolvimento).",
             svgs: [

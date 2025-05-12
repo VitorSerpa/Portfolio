@@ -18,14 +18,20 @@ const Paint: FC = () => {
                 <div className={styles.videoWrapper}>
                     <div className={styles.videoHoverDescription}>
                         <div className={styles.info}>
-                            <div>
-                                {icons.map((element, index) => (
+                            {icons.map((element, index) => (
+                                <div className={styles.svgWrapper}>
                                     <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
-                                        <img key={index} src={`/svg/${element}.svg`} alt={element} className={styles.svg} />
+                                        <img
+                                            key={index}
+                                            src={`/svg/${element}.svg`}
+                                            alt={element}
+                                            className={styles.svg}
+                                        />
                                     </button>
-
-                                ))}
-                            </div>
+                                    <span className={styles.tooltipText}>{element.toUpperCase()}</span>
+                                </div>
+                            ))}
+                           
                             <a href="https://github.com/VitorSerpa/CS-Paint" target="_blank" className={styles.seeMore}>Ver no GitHub</a>
                         </div>
                     </div>

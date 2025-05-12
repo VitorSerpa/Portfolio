@@ -1,16 +1,15 @@
 import { FC } from "react";
-import { useNavigate } from 'react-router-dom';
-import styles from "./CargasSP.module.css"
+import { useNavigate } from "react-router-dom";
+import styles from "./CargasSP.module.css";
 
-const icons = ["python","custom tkinter", "mysql"]
+const icons = ["python", "custom tkinter", "mysql"];
 
 const Paint: FC = () => {
-
     const navigate = useNavigate();
 
     const handleClickIcon = (icon: string) => {
-        navigate('/techs', { state: icon });
-    }
+        navigate("/techs", { state: icon });
+    };
 
     return (
         <div className={styles.main}>
@@ -18,32 +17,32 @@ const Paint: FC = () => {
                 <div className={styles.videoWrapper}>
                     <div className={styles.videoHoverDescription}>
                         <div className={styles.info}>
-                            <div>
                                 {icons.map((element, index) => (
-                                    <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
-                                        <img key={index} src={`/svg/${element}.svg`} alt={element} className={styles.svg} />
-                                    </button>
-
+                                    <div className={styles.svgWrapper}>
+                                        <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
+                                            <img
+                                                key={index}
+                                                src={`/svg/${element}.svg`}
+                                                alt={element}
+                                                className={styles.svg}
+                                            />
+                                        </button>
+                                        <span className={styles.tooltipText}>{element.toUpperCase()}</span>
+                                    </div>
                                 ))}
-                            </div>
-                            <a href="https://github.com/VitorSerpa/CS-Paint" target="_blank" className={styles.seeMore}>Ver no GitHub</a>
                         </div>
                     </div>
-                    
                     <img className={styles.video} src="/images/normalImages/tccImage1.png" alt="" />
-
                 </div>
             </section>
             <section className={styles.description}>
                 <div className={styles.projectDescription}>
                     <h1>Refatoração do sistema de registro de presença do Colégio UNIVAP</h1>
-                    <p>
-                       Trabalho de conclusão de curso (TCC) que visa c
-                    </p>
+                    <p>Trabalho de conclusão de curso (TCC) que visa c</p>
                 </div>
             </section>
         </div>
-    )
-}
+    );
+};
 
-export default Paint
+export default Paint;

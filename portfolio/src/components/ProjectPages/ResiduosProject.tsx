@@ -1,16 +1,15 @@
 import { FC } from "react";
-import { useNavigate } from 'react-router-dom';
-import styles from "./CargasSP.module.css"
+import { useNavigate } from "react-router-dom";
+import styles from "./CargasSP.module.css";
 
-const icons = ["python"]
+const icons = ["python"];
 
 const Residuos: FC = () => {
-
     const navigate = useNavigate();
 
     const handleClickIcon = (icon: string) => {
-        navigate('/techs', { state: icon });
-    }
+        navigate("/techs", { state: icon });
+    };
 
     return (
         <div className={styles.main}>
@@ -18,39 +17,56 @@ const Residuos: FC = () => {
                 <div className={styles.videoWrapper}>
                     <div className={styles.videoHoverDescription}>
                         <div className={styles.info}>
-                            <div>
-                                {icons.map((element, index) => (
+                            {icons.map((element, index) => (
+                                <div className={styles.svgWrapper}>
                                     <button className={styles.buttonSvg} onClick={() => handleClickIcon(element)}>
-                                        <img key={index} src={`/svg/${element}.svg`} alt={element} className={styles.svg} />
+                                        <img
+                                            key={index}
+                                            src={`/svg/${element}.svg`}
+                                            alt={element}
+                                            className={styles.svg}
+                                        />
                                     </button>
-
-                                ))}
-                            </div>
-                            <a href="https://github.com/VitorSerpa/CS-Paint" target="_blank" className={styles.seeMore}>Ver no GitHub</a>
+                                    <span className={styles.tooltipText}>{element.toUpperCase()}</span>
+                                </div>
+                            ))}
+                            <a
+                                href="https://github.com/Vitor-Lucas/Trash-Identifier"
+                                target="_blank"
+                                className={styles.seeMore}
+                            >
+                                Ver no GitHub
+                            </a>
                         </div>
                     </div>
 
                     <video className={styles.video} src="/videos/residuosVideo.mp4" autoPlay controls></video>
-
                 </div>
             </section>
             <section className={styles.description}>
                 <div className={styles.projectDescription}>
                     <h1>Reconhecimento de resíduos reciclaveis através de visão computacional</h1>
                     <p>
-                        Projeto que 
-                        Com personalização de cores, expessura e tipo da linha. O aplicativo foi desenvolvido usando C# com a biblioteca Windows Forms que faz parte do .NET Framework. <br /><br />
-                        Para a realização do desenho da elipse foi utilizado a equação, <b>paramétrica da elipse.</b> que é descrita nessa formula: <br /><br />
+                        Projeto que Com personalização de cores, expessura e tipo da linha. O aplicativo foi
+                        desenvolvido usando C# com a biblioteca Windows Forms que faz parte do .NET Framework. <br />
+                        <br />
+                        Para a realização do desenho da elipse foi utilizado a equação, <b>
+                            paramétrica da elipse.
+                        </b>{" "}
+                        que é descrita nessa formula: <br />
+                        <br />
                         <b>x(t)=h+a⋅cos(t)</b> <br />
-                        <b>y(t)=k+b⋅sin(t)</b><br /><br />
-
-                        Para o retângulo foi utilizado a função <b>e.Graphics.DrawRectangle()</b> e já para as outra formas foi utilizado o <b>e.Graphics.DrawLine() </b>
+                        <b>y(t)=k+b⋅sin(t)</b>
+                        <br />
+                        <br />
+                        Para o retângulo foi utilizado a função <b>e.Graphics.DrawRectangle()</b> e já para as outra
+                        formas foi utilizado o <b>e.Graphics.DrawLine() </b>
                         com os devidos inputs de click do cursor.
                     </p>
                 </div>
             </section>
         </div>
-    )
-}
+    );
+};
 
-export default Residuos
+export default Residuos;

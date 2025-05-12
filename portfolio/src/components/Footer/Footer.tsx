@@ -4,9 +4,8 @@ import styles from "./Footer.module.css";
 const Footer: FC = () => {
     return (
         <footer className={styles.footer}>
-            <div>
+            <div className={styles.socialMedia}>
                 <h1 className={styles.title}>Contato</h1>
-                <div className={styles.socialMedia}>
                     <div className={styles.items}>
                         <a
                             target="_blank"
@@ -61,7 +60,6 @@ const Footer: FC = () => {
                         </a>
                     </div>
                 </div>
-            </div>
         </footer>
     );
 };
