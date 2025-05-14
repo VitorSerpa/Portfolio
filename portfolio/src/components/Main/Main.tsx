@@ -83,7 +83,7 @@ const Main: FC = () => {
                     <div className={styles.title}>
                         <h1>
                             Olá, eu sou o{" "}
-                            <a href="">
+                            <a href="/images/curriculo2025 (1).pdf" download>
                                 <span className={styles.purpleTitle}>Vitor :)</span>
                             </a>
                         </h1>

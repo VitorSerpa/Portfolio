@@ -64,7 +64,7 @@ const About: FC = () => {
 
                 <aside className={styles.infos}>
                     <h2>Brasileiro</h2>
-                    <p>R. Capitão Alípio Neves Barbosa, 84 - Jardim Portugal, São José dos Campos - SP </p> <br />
+                    <p> São José dos Campos - SP </p> <br />
                     <p>
                         <b>Telefone:</b> <a href="https://wa.me/12981312111" target="_blank">12981312111</a>
                     </p>
