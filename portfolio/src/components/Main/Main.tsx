@@ -83,13 +83,13 @@ const Main: FC = () => {
                     <div className={styles.title}>
                         <h1>
                             Olá, eu sou o{" "}
-                            <a href="/images/curriculo2025 (1).pdf" download>
+                            <a href="/sobre">
                                 <span className={styles.purpleTitle}>Vitor :)</span>
                             </a>
                         </h1>
                         <p>Desenvolvedor de Software</p>
                         <div className={styles.actions}>
-                            <a className={styles.button1} href="">
+                            <a className={styles.button1}  href="/images/curriculo2025 (1).pdf" download>
                                 Baixe meu CV!
                             </a>
                             <a className={styles.button2} href="#contato">
