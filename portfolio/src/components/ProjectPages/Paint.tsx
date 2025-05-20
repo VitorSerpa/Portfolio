@@ -34,9 +34,9 @@ const Paint: FC = () => {
                            
                             <a href="https://github.com/VitorSerpa/CS-Paint" target="_blank" className={styles.seeMore}>Ver no GitHub</a>
                         </div>
-                    </div>
 
-                    <video className={styles.video} src="/videos/paintVideo.mp4" autoPlay controls></video>
+                        <video className={styles.video} src="/videos/paintVideo.mp4" autoPlay controls></video>
+                    </div>
 
                 </div>
             </section>

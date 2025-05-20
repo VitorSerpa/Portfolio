@@ -50,6 +50,13 @@ const Paint: FC = () => {
                         vitoria
                     </p>
                 </div>
+                <div className={styles.projectDescription}>
+                    <h1>Participação em outras maratonas:</h1>
+                    <p>
+                        Costumo participar ativamente de outras maratonas e competições de programação, buscando sempre desenvolver minhas habilidades técnicas,
+                        aprender com diferentes desafios e trocar experiências com outros programadores.
+                    </p>
+                </div>
             </section>
         </div>
     );

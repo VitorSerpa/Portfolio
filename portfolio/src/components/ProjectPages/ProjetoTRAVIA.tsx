@@ -33,34 +33,24 @@ const ProjetoTRAVIA: FC = () => {
 
                         </div>
                     </div>
-                    <video className={styles.video} src="/videos/traviaVideo.mp4" autoPlay controls></video>
-                    <aside className={styles.metodology}>
-                        <h1>Resultados</h1>
-                        <p>
-                            Foi possível realizar o reconhecimento de diferentes tipos de veículos — carros, motos,
-                            ônibus e caminhões — e realizar a contagem de entrada e saída desses veículos nas diferentes
-                            vias. Por meio de imagens aéreas, obtivemos grande porcentagem de precisão de reconhecimento
-                        </p>
+                    <div>
 
-                        <h1>Conclusão</h1>
+                        <h1>
+                            T.R.A.V.I.A - Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial
+                        </h1>
                         <p>
-                            Percebe-se que, com o uso de inteligência artificial para mobilidade urbana, processos como
-                            a análise do fluxo de veículos e o monitoramento do trânsito tornam-se mais simples e
-                            eficazes.
+                            O objetivo da realização desse projeto é criar um sistema de análise de tráfego urbano,
+                            utilizando visão computacional como principal ferramenta para identificar veículos e automatizar
+                            o registro do fluxo viário, tornando o processo mais eficiente e preciso.
                         </p>
-                    </aside>
+                    </div>
+                    <video className={styles.video} src="/videos/traviaVideo.mp4" autoPlay controls></video>
+                    
                 </div>
             </section>
             <section className={styles.description}>
                 <div className={styles.projectDescription}>
-                    <h1>
-                        T.R.A.V.I.A - Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial
-                    </h1>
-                    <p>
-                        O objetivo da realização desse projeto é criar um sistema de análise de tráfego urbano,
-                        utilizando visão computacional como principal ferramenta para identificar veículos e automatizar
-                        o registro do fluxo viário, tornando o processo mais eficiente e preciso.
-                    </p>
+                    
                     <h1 className={styles.metodologyTitle}>Metodologia:</h1>
                     <p>
                         Foi realizada a gravação de vídeos por drones para fazer a captura de imagens aéreas do tráfego
@@ -77,6 +67,21 @@ const ProjetoTRAVIA: FC = () => {
                         reconhecer a imagem, mostrando um retângulo ao redor do veículo e contabilizando entradas e
                         saídas em determinada via, além da porcentagem de precisão do reconhecimento.
                     </p>
+                    <aside className={styles.metodology}>
+                        <h1>Resultados</h1>
+                        <p>
+                            Foi possível realizar o reconhecimento de diferentes tipos de veículos — carros, motos,
+                            ônibus e caminhões — e realizar a contagem de entrada e saída desses veículos nas diferentes
+                            vias. Por meio de imagens aéreas, obtivemos grande porcentagem de precisão de reconhecimento
+                        </p>
+
+                        <h1>Conclusão</h1>
+                        <p>
+                            Percebe-se que, com o uso de inteligência artificial para mobilidade urbana, processos como
+                            a análise do fluxo de veículos e o monitoramento do trânsito tornam-se mais simples e
+                            eficazes.
+                        </p>
+                    </aside>
                 </div>
             </section>
         </div>

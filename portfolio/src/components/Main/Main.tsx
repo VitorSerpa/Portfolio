@@ -89,7 +89,7 @@ const Main: FC = () => {
                         </h1>
                         <p>Desenvolvedor de Software</p>
                         <div className={styles.actions}>
-                            <a className={styles.button1}  href="/images/curriculo2025 (1).pdf" download>
+                            <a className={styles.button1}  href="/images/curriculo2025.pdf" download>
                                 Baixe meu CV!
                             </a>
                             <a className={styles.button2} href="#contato">

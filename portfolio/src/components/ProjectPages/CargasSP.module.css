@@ -8,6 +8,8 @@
 .videoSection img {
   width: 100%;
   height: auto;
+  margin-top: 4rem;
+
 }
 
 .videoSection{
@@ -20,6 +22,7 @@
 .videoWrapper {
   position: relative;
   display: inline-block;
+
 }
 
 .videoHoverDescription {
@@ -113,7 +116,6 @@
 }
 
 
-
 .projectDescription h2{
   font-size: 26px;
   text-align: justify;
@@ -129,8 +131,12 @@
 .videoSection video{
   width: 100%;
   height: auto;
+  margin-top: 2rem;
 }
 
+.videoHoverDescription video{
+  margin-top: 0;
+}
 
 
 .tooltipText {

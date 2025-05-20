@@ -60,10 +60,7 @@
     transition: all 0.2s ease;
 }
 
-.img:hover {
-    transform: scale(0.95); 
-    cursor: pointer;
-}
+
 
 .scrollDown {
     display: flex;
