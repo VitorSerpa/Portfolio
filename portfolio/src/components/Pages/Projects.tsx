@@ -6,15 +6,15 @@ import { FC } from "react";
 
 const projectList = [
     {
-        projectName: "Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial",
-        normalImg: "/images/normalImages/traviaVideoGif.gif",
-        darkImg: "/images/darkImages/avenueImage.png",
-        description: "Projeto de plataforma WEB e IA parasenvolvimento).",
+        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
+        normalImg: "/images/normalImages/chartGif.gif",
+        darkImg: "/images/darkImages/analiseSP.png",
+        description: "Projeto de plataforma WEB e IA  desenvolvimento).",
         svgs: [
-            "python", "yolo", "opencv", "google colab"
+            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas"
         ],
-        large: true,
-        linkToProject: "/projetos/refatoracao"
+        large: false,
+        linkToProject: "/projetos/cargasSP"
     },
     {
         projectName: "Refatoração do sistema de registro de presença do Colégio UNIVAP",
@@ -28,15 +28,15 @@ const projectList = [
         linkToProject: "/projetos/tcc"
     },
     {
-        projectName: "Plataforma para análise gráfica de exportações e importações feitas pelo Estado de SP",
-        normalImg: "/images/normalImages/chartGif.gif",
-        darkImg: "/images/darkImages/analiseSP.png",
-        description: "Projeto de plataforma WEB e IA  desenvolvimento).",
+        projectName: "Tecnologia de Reconhecimetno Automático de Veículos por Inteligência Artificial",
+        normalImg: "/images/normalImages/traviaVideoGif.gif",
+        darkImg: "/images/darkImages/avenueImage.png",
+        description: "Projeto de plataforma WEB e IA parasenvolvimento).",
         svgs: [
-            "html5", "css", "javascript", "mysql", "flask", "google colab", "pandas"
+            "python", "yolo", "opencv", "google colab"
         ],
-        large: false,
-        linkToProject: "/projetos/cargasSP"
+        large: true,
+        linkToProject: "/projetos/refatoracao"
     },
     {
         projectName: "Vencedor da Maratona de programação Jr. UNIVAP 2024",
